@@ -1,5 +1,5 @@
 # Futbak : Le site web du projet Futbak (Drupal 8)
-![Futbak](http://192.168.0.114/futbak-pierre/themes/bootstrap_futbak/screenshot.png "Futbak")
+![Futbak](https://github.com/NaturalSolutions/futbak/blob/master/themes/bootstrap_futbak/screenshot.png, "Futbak")
 
 - Le répertoire "themes" contient :  
   - bootstrap : le theme bootstrap de Drupal [Bootstrap 8.x-3.0-rc2](https://ftp.drupal.org/files/projects/bootstrap-8.x-3.0.zip) qui sert de base (ne pas éditer), 
