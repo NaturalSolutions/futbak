@@ -19,16 +19,18 @@
        }       
      },
      less: {
-       dist: {
-         files: {
-           'css/style.css': 'less/style.less'
-         },
-         options: {
-           compress: false,
-           sourceMap: true,
-           sourceMapFilename: 'css/style.css.map',
-           sourceMapURL: 'style.css.map'
-         }
+       dist: {          
+          files: {
+            'css/style.css': 'less/style.less'
+          },          
+          options: {
+              compress: false,              
+              sourceMap: true,
+              sourceMapFilename: 'css/style.css.map',
+              sourceMapURL: 'style.css.map',              
+              outputSourceFiles: true
+          },          
+         
        }
      }
    });

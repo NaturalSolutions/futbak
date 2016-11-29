@@ -7,7 +7,7 @@ description: 'Theme de Futbak'
 package: 'Bootstrap'
 
 regions:
-  navigation: 'Navigation'
+  # navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
   header: 'Top Bar'
   highlighted: 'Highlighted'

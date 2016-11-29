@@ -10,8 +10,47 @@ body {
   // Fix horizontal scrolling on iOS devices.
   // http://drupal.org/node/1870076
   position: relative;
+  
+  .nav {    
+    min-width: 88%;
+    margin-top: 25px;
+    margin-right: 0;
+    > li {      
+      text-align: center;
+      margin-right: 5%; 
+      float: right;
+      > a {     
+        font-family: 'Proxima Nova';
+        padding-top: 20px;
+        padding-bottom: 3px;
+        text-transform: uppercase;
+        color: #fff !important;
+        padding-right: 0;
+        padding-left: 0;
+        &:hover{
+          font-weight: bold;
+          border-bottom: 1px solid @brand-primary;
+        }
+      }
+    }
+  }
+  
+  header.navbar{
+    border: 0;
+    background-color: transparent;
+    .navbar-brand {
+      background: url('../images/logo_futbak.png') no-repeat 50% 50% transparent;
+      background-size: 100%;
+      min-height: 60px;
+      min-width: 150px;
+      margin-left: 1% !important;
+      margin-top: 20px;
+      position: absolute;
+      top: 0;
+    }
+  }
 
-  &.navbar-is-static-top {
+  &.navbar-is-static-top {  
     margin-top: 0;
   }
   &.navbar-is-fixed-top {

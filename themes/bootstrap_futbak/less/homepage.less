@@ -1,0 +1,97 @@
+/*
+
+	Specific style for homepage
+
+*/
+@font-face {
+    font-family: 'Proxima Nova Thin';    
+    src: url('../fonts/ProximaNova-Thin_0.otf') format("opentype");    
+}
+@font-face {
+    font-family: 'Gimme Danger';    
+    src: url('../fonts/Gimme Danger.ttf') format('truetype');   
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/Proxima Nova Regular.otf') format('opentype');   
+}
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('../fonts/Proxima Nova Bold.otf') format('opentype');   
+}
+@font-face {
+    font-family: 'Proxima Nova Semibold';
+    src: url('../fonts/Proxima Nova Semibold.otf') format('opentype');   
+}
+body.path-frontpage{ 
+	div.main-container{
+		margin-top: -60px;		
+		div.fold1{		
+			padding-top: 60px;
+			background: url('../images/background_fold1.jpg') no-repeat 50% 0%;
+			background-size: cover;
+			-moz-background-size: cover;
+			-webkit-background-size: cover;
+			min-height: 1020px;	
+			div.blocFold1{
+				margin-top: 300px;
+				padding-left: 6%;				
+				button{
+					margin-top: 40px;
+				}
+				p.preSlogan{
+					color: #fff;
+				    font-family: 'Proxima Nova Thin';
+				    letter-spacing: 10px;
+				    text-transform: uppercase;
+				    font-size: 1.2em;
+				    margin-bottom: 20px;
+				}
+				p.slogan{
+					color: @brand-primary;
+				    font-family: 'Gimme Danger';
+				    letter-spacing: 10px;
+				    text-transform: uppercase;
+				    font-size: 3em;
+				    span{
+				    	color: @brand-success;
+				    	&.virgule{
+				    		color: #fff;
+				    	}
+				    }
+				}
+				p.postSlogan{
+					color: @brand-primary;
+				    font-family: 'Proxima Nova Thin';			    			    
+				    color: #fff;
+				    margin-top: 30px;
+				    width: 45%;
+				    font-size: 1.1em;
+				}
+			}
+		}
+		div.fold2{					
+			background: url('../images/background_fold2.png') no-repeat 50% 0%;
+			background-size: 100%;				
+			min-height: 900px;	
+			margin-top: -180px;
+    		padding-top: 200px;
+    		div.bloc1Fold2{
+    			background: url('../images/background_bloc1_fold2.png') no-repeat 50% 0%;
+    		}
+    		div.bloc2Fold2{
+    			background: url('../images/background_bloc2_fold2.png') no-repeat 50% 0%;    			
+    		}
+    		div.bloc3Fold2{
+    			background: url('../images/background_bloc3_fold2.png') no-repeat 50% 0%;    			
+    		}
+    		div.bloc1Fold2, div.bloc2Fold2, div.bloc3Fold2{
+    			background-size: 100%;				
+				min-height: 400px;	
+				p.title{
+					margin-top: 150px;
+				}
+    		}
+		}
+	}	
+}  

@@ -100,82 +100,65 @@
 {# Main #}
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
-    <div class="row">
+    
 
-      {# Header #}
-      {% if page.header %}
-        {% block header %}
-          <div class="col-sm-12" role="heading">
-            {{ page.header }}
-          </div>
-        {% endblock %}
-      {% endif %}
+      {# Content #}      
+      <div class="row fold1">
+        <div class="col-lg-12 blocFold1">
 
-      {# Sidebar First #}
-      {% if page.sidebar_first %}
-        {% block sidebar_first %}
-          <aside class="col-sm-3" role="complementary">
-            {{ page.sidebar_first }}
-          </aside>
-        {% endblock %}
-      {% endif %}
+          <p class="preSlogan">
+            Lancement : été 2017
+          </p>
 
-      {# Content #}
-      {%
-        set content_classes = [
-          page.sidebar_first and page.sidebar_second ? 'col-sm-6',
-          page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
-          page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
-          page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
-        ]
-      %}
-      <section{{ content_attributes.addClass(content_classes) }}>
+          <p class="slogan">
+            Slogan<span class='virgule'>,</span> <span>accroche</span>
+          </p>
 
-        {# Highlighted #}
-        {% if page.highlighted %}
-          {% block highlighted %}
-            <div class="highlighted">{{ page.highlighted }}</div>
-          {% endblock %}
-        {% endif %}
+          <p class="postSlogan">
+            Quel est le meilleur buteur, le meilleur défenseur ou celui dont les passes auront été les plus décisives ? Technologie innovante destinée aux passionnés de foot indoor, FutBak t’offre enfin la possibilité de retrouver l’intégralité de tes performances et de refaire le match… statistiques à l’appui !
+          </p>
 
-        {# Breadcrumbs #}
-        {% if breadcrumb %}
-          {% block breadcrumb %}
-            {{ breadcrumb }}
-          {% endblock %}
-        {% endif %}
+          <button class="btn btn-primary" type="button">
+            Découvrir
+          </button>
+      
+        </div> 
+      </div>
+      
+      <div class="row fold2">        
+        <div class="col-lg-4 bloc1Fold2">
+          <p class="title">
+            JOUE AU FOOT
+          </p>
+          <p class="subTitle">
+            Lorem ipsum upsum Lorem ipsum upsum Lorem ipsum upsum Lorem ipsum upsum
+          </p>
+        </div>
+        <div class="col-lg-4 bloc2Fold2">
+          <p class="title">
+            COMPARE TOI
+          </p>
+          <p class="subTitle">
+            Lorem ipsum upsum Lorem ipsum upsum Lorem ipsum upsum Lorem ipsum upsum
+          </p>
+        </div>
+        <div class="col-lg-4 bloc3Fold2">
+          <p class="title">
+            AMELIORE TOI
+          </p>
+          <p class="subTitle">
+            Lorem ipsum upsum Lorem ipsum upsum Lorem ipsum upsum Lorem ipsum upsum
+          </p>
+        </div>
+      </div>
 
-        {# Action Links #}
-        {% if action_links %}
-          {% block action_links %}
-            <ul class="action-links">{{ action_links }}</ul>
-          {% endblock %}
-        {% endif %}
+      <div class="row fold3">
+        <div class="col-lg-12">          
+        </div>        
+      </div>
 
-        {# Help #}
-        {% if page.help %}
-          {% block help %}
-            {{ page.help }}
-          {% endblock %}
-        {% endif %}
-
-        {# Content #}
-        {% block content %}
-          <a id="main-content"></a>
-          {{ page.content }}
-        {% endblock %}
-      </section>
-
-      {# Sidebar Second #}
-      {% if page.sidebar_second %}
-        {% block sidebar_second %}
-          <aside class="col-sm-3" role="complementary">
-            {{ page.sidebar_second }}
-          </aside>
-        {% endblock %}
-      {% endif %}
-    </div>
-  </div>
+  </div> {# fin main-container #}
+  
 {% endblock %}
 
 {% if page.footer %}
