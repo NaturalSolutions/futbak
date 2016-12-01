@@ -29,7 +29,8 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #fff;
+*/
+/*
 //** Global text color on `<body>`.
 @text-color:            @gray-dark;
 
@@ -153,10 +154,6 @@
 
 */
 /*
-
-@btn-success-color:              #fff;
-@btn-success-bg:                 @brand-success;
-@btn-success-border:             darken(@btn-success-bg, 5%);
 
 @btn-info-color:                 #fff;
 @btn-info-bg:                    @brand-info;
@@ -1805,7 +1802,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
-  background-color: #fff;
+  background-color: #1f1e24;
 }
 input,
 button,
@@ -1849,7 +1846,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857143;
-  background-color: #fff;
+  background-color: #1f1e24;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -3009,7 +3006,7 @@ th {
   border-top: 2px solid #ddd;
 }
 .table .table {
-  background-color: #fff;
+  background-color: #1f1e24;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -4284,7 +4281,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: #fff;
+  background-color: #1f1e24;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -4330,7 +4327,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #fff;
+    border-bottom-color: #1f1e24;
   }
 }
 .nav-pills > li {
@@ -4398,7 +4395,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #fff;
+    border-bottom-color: #1f1e24;
   }
 }
 .tab-content > .tab-pane {
@@ -5249,7 +5246,7 @@ a.badge:focus {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
-  background-color: #fff;
+  background-color: #1f1e24;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
@@ -7868,9 +7865,27 @@ fieldset[disabled] .btn-primary.focus {
   background-color: #ff7815;
 }
 .btn-success {
+  position: relative;
+  text-transform: uppercase;
+  padding: 17px 2.5% 13px 2.5%;
+  font-family: 'Proxima Nova Semibold';
+  font-size: 0.9em;
+  z-index: 10;
   color: #fff;
   background-color: #398140;
   border-color: #316f37;
+}
+.btn-success:before {
+  content: " ";
+  position: absolute;
+  z-index: 0;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  width: 101%;
+  height: 104%;
+  border: 1px solid #316f37;
 }
 .btn-success:focus,
 .btn-success.focus {
@@ -8605,10 +8620,53 @@ ul {
   margin-top: 10px;
 }
 .footer {
-  margin-top: 45px;
-  padding-top: 35px;
-  padding-bottom: 36px;
-  border-top: 1px solid #E5E5E5;
+  background: url('../images/background_footer.png') no-repeat 50% 0;
+  background-size: 100%;
+  min-height: 500px;
+  margin-top: -168px;
+  color: #4e4e4e;
+}
+.footer div.bloc1Footer {
+  background: url('../images/logo_futbak_footer.png') no-repeat 50% 100%;
+  background-size: 85%;
+  height: 418px;
+}
+.footer div.bloc2Footer {
+  margin-top: 300px;
+  padding-left: 8%;
+}
+.footer div.bloc3Footer {
+  margin-top: 300px;
+  padding-left: 6%;
+}
+.footer div.bloc4Footer {
+  margin-top: 300px;
+}
+.footer p {
+  font-family: 'Proxima Nova Semibold';
+  font-size: 0.8em;
+}
+.footer p.title {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.footer p.fb {
+  text-indent: 20px;
+  background: url('../images/icon_fb_footer.png') no-repeat 0% 50%;
+  background-size: 7px;
+}
+.footer p.insta {
+  text-indent: 20px;
+  background: url('../images/icon_insta_footer.png') no-repeat 0% 50%;
+  background-size: 10px;
+}
+.footer p.twt {
+  text-indent: 20px;
+  background: url('../images/icon_twt_footer.png') no-repeat 0% 50%;
+  background-size: 11px;
+}
+.footer div.labelPosition p {
+  font-family: 'Proxima Nova';
 }
 p:last-child,
 .form-group:last-child,
@@ -8658,6 +8716,10 @@ p:last-child,
 @font-face {
   font-family: 'Proxima Nova Semibold';
   src: url('../fonts/Proxima Nova Semibold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url('../fonts/Proxima Nova Light.otf') format('opentype');
 }
 body.path-frontpage header.navbar {
   transition: background-color 0.8s;
@@ -8730,9 +8792,9 @@ body.path-frontpage div.main-container div.fold1 div.blocFold1 p.postSlogan {
 }
 body.path-frontpage div.main-container div.fold2 {
   background: url('../images/background_fold2.png') no-repeat 50% 0%;
-  background-size: 100%;
-  min-height: 900px;
-  margin-top: -180px;
+  background-size: 120%;
+  min-height: 1100px;
+  margin-top: -192px;
   padding-top: 160px;
 }
 body.path-frontpage div.main-container div.fold2 div.bloc1Fold2 {
@@ -8767,12 +8829,230 @@ body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 p.subTitle {
   margin: 0 auto;
   margin-top: 15px;
 }
+body.path-frontpage div.main-container div.fold3 {
+  transform-origin: left center;
+  transform: rotate(-6deg);
+  width: 102%;
+  margin-left: -3%;
+  background-color: #1f1e24;
+}
+body.path-frontpage div.main-container div.fold3 div.wrapperHorizontal {
+  transform-origin: left center;
+  transform: rotate(6deg);
+}
 body.path-frontpage div.main-container div.fold3 div.bloc1Fold3 {
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+}
+body.path-frontpage div.main-container div.fold3 div.bloc1Fold3::before {
+  content: "";
+  position: absolute;
+  width: 186%;
+  height: 200%;
+  top: -66%;
+  left: -45%;
+  z-index: -1;
   background: url('../images/photo_fold3_join.png') no-repeat 50% 50%;
-  background-size: 100%;
-  min-height: 500px;
+  background-size: 105%;
+  transform-origin: left center;
+  transform: rotate(6deg);
 }
 body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 {
   background-color: #1f1e24;
+  min-height: 600px;
+  color: #fff;
+  padding-top: 125px;
+  padding-left: 5%;
+  /* Form Mailchimp */
+}
+body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 p {
+  font-family: 'Proxima Nova Light';
+  background: url('../images/icon_validate.png') no-repeat 0 0;
+  background-size: 15px;
+  text-indent: 30px;
+  margin-left: 3%;
+}
+body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 p.title {
+  font-family: 'Gimme Danger';
+  background: none;
+  font-size: 2em;
+  text-indent: 0;
+  margin-bottom: 45px;
+}
+body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div#mc_embed_signup {
+  background: transparent;
+  margin-top: 60px;
+}
+body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div#mc_embed_signup div.mc-field-group {
+  width: 32%;
+  display: inline-block;
+}
+body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div#mc_embed_signup div.clear {
+  display: inline-block;
+  top: -8px;
+  position: relative;
+}
+body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div#mc_embed_signup div.clear input {
+  color: #398140;
+  border-radius: 0;
+  background-color: transparent;
+  border: 1px solid #398140;
+  font-family: 'Proxima Nova Semibold';
+  padding: 6px 26%;
+  height: auto;
+  margin-left: 4px;
+  margin-top: -7px;
+}
+body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div#mc_embed_signup div.clear input:focus {
+  outline-color: #398140;
+}
+body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div#mc_embed_signup input.email {
+  border: 0;
+  padding: 15px 0;
+  color: #333333;
+  font-family: 'Proxima Nova Light';
+  text-indent: 15px;
+}
+body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div#mc_embed_signup input.email:focus {
+  outline-color: #398140;
+}
+body.path-frontpage div.main-container div.fold4 {
+  min-height: 850px;
+  background: url('../images/background_fold4.png') no-repeat 50% 0%;
+  background-size: 100%;
+  margin-top: -210px;
+  color: #fff;
+}
+body.path-frontpage div.main-container div.fold4 p.title {
+  font-family: 'Gimme Danger';
+  font-size: 2em;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 70px;
+}
+body.path-frontpage div.main-container div.fold4 p.nomEquipe {
+  font-family: 'Gimme Danger';
+  font-size: 1.2em;
+  line-height: 2em;
+}
+body.path-frontpage div.main-container div.fold4 p.decro {
+  font-family: 'Proxima Nova Light';
+}
+body.path-frontpage div.main-container div.fold4 div.social span {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+body.path-frontpage div.main-container div.fold4 div.social span.iconLinkedin {
+  background: url('../images/icon_linkedin.png') no-repeat 50% 50%;
+  background-size: 95%;
+}
+body.path-frontpage div.main-container div.fold4 div.social span.iconMail {
+  background: url('../images/icon_mail.png') no-repeat 50% 50%;
+  background-size: 95%;
+}
+body.path-frontpage div.main-container div.fold4 div.bloc1Fold4 {
+  padding: 0% 9%;
+}
+body.path-frontpage div.main-container div.fold4 div.bloc1Fold4 div.photo {
+  background: url('../images/equipe1.png') no-repeat 50% 50%;
+  background-size: 100%;
+  height: 250px;
+}
+body.path-frontpage div.main-container div.fold4 div.bloc2Fold4 {
+  padding: 0% 9%;
+}
+body.path-frontpage div.main-container div.fold4 div.bloc2Fold4 div.photo {
+  background: url('../images/equipe2.png') no-repeat 50% 50%;
+  background-size: 100%;
+  height: 250px;
+}
+body.path-frontpage div.main-container div.fold4 div.bloc3Fold4 {
+  padding: 0% 9%;
+}
+body.path-frontpage div.main-container div.fold4 div.bloc3Fold4 div.photo {
+  background: url('../images/equipe3.png') no-repeat 50% 50%;
+  background-size: 100%;
+  height: 250px;
+}
+body.path-frontpage div.main-container div.fold5 {
+  background: url('../images/background_fold5.jpg') no-repeat 50% 0%;
+  background-size: 100%;
+  height: 414px;
+  padding-top: 90px;
+}
+body.path-frontpage div.main-container div.fold5 div.bloc1Fold5 {
+  text-align: center;
+}
+body.path-frontpage div.main-container div.fold5 div.bloc1Fold5 p.title {
+  font-family: 'Gimme Danger';
+  color: #3b3b3b;
+  font-size: 2.2em;
+}
+body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 {
+  height: 100%;
+  text-align: center;
+}
+body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.logo {
+  height: 125px;
+  width: 5%;
+  display: inline-block;
+  margin: 70px 3% 0;
+}
+body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.logo.monClub {
+  background: url('../images/logo_monclub.png') no-repeat 50% 50%;
+  background-size: 100%;
+}
+body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.logo.paysAix {
+  background: url('../images/logo_paysAix.png') no-repeat 50% 50%;
+  background-size: 100%;
+  width: 11%;
+}
+body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.logo.captronic {
+  background: url('../images/logo_captronic.png') no-repeat 50% 50%;
+  background-size: 100%;
+  width: 8%;
+}
+body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.logo.etienne {
+  background: url('../images/logo_etienne.png') no-repeat 50% 50%;
+  background-size: 100%;
+}
+body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.logo.cnrs {
+  background: url('../images/logo_cnrs.png') no-repeat 50% 50%;
+  background-size: 100%;
+}
+body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.logo.institut {
+  background: url('../images/logo_institut.png') no-repeat 50% 50%;
+  background-size: 100%;
+  width: 8%;
+}
+body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.logo.belleDeMai {
+  background: url('../images/logo_belledemai.png') no-repeat 50% 50%;
+  background-size: 100%;
+}
+body.path-frontpage div.main-container div.fold6 {
+  background: url('../images/background_fold6.png') no-repeat 50% 50%;
+  background-size: 100%;
+  min-height: 786px;
+  text-align: center;
+  color: #fff;
+}
+body.path-frontpage div.main-container div.fold6 p.title {
+  font-family: 'Gimme Danger';
+  font-size: 2.2em;
+  margin-top: 172px;
+  font-size: 3em;
+  margin-bottom: 25px;
+}
+body.path-frontpage div.main-container div.fold6 p.txt {
+  font-family: 'Proxima Nova Bold';
+  font-size: 1.2em;
+  padding: 0 20%;
+}
+body.path-frontpage div.main-container div.fold6 button {
+  margin-top: 70px;
 }
 /*# sourceMappingURL=style.css.map */

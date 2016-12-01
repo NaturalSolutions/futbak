@@ -23,10 +23,15 @@
     font-family: 'Proxima Nova Semibold';
     src: url('../fonts/Proxima Nova Semibold.otf') format('opentype');   
 }
+@font-face {
+    font-family: 'Proxima Nova Light';
+    src: url('../fonts/Proxima Nova Light.otf') format('opentype');   
+}
+
 body.path-frontpage{ 
 
 	header.navbar{
-		transition: background-color 0.8s;
+		transition: background-color 0.8s; 
 		-webkit-transition: background-color 0.8s;
 		a.navbar-brand{
 			transition: margin-top 0.8s;
@@ -96,10 +101,10 @@ body.path-frontpage{
 		}
 		div.fold2{					
 			background: url('../images/background_fold2.png') no-repeat 50% 0%;
-			background-size: 100%;				
-			min-height: 900px;	
-			margin-top: -180px;
-    		padding-top: 160px;
+			background-size: 120%;			
+			min-height: 1100px;
+			margin-top: -192px;
+			padding-top: 160px;			
     		div.bloc1Fold2{
     			background: url('../images/background_bloc1_fold2.png') no-repeat 50% 0%;
     			background-size: 70%;
@@ -128,13 +133,235 @@ body.path-frontpage{
     		}
 		}
 		div.fold3{
+			transform-origin: left center;
+			transform: rotate(-6deg);
+			width: 102%;
+			margin-left: -3%;			
+			background-color: @body-bg;
+			div.wrapperHorizontal{
+				transform-origin: left center;
+				transform: rotate(6deg);
+			}
 			div.bloc1Fold3{
-				background: url('../images/photo_fold3_join.png') no-repeat 50% 50%;
-				background-size: 100%;
-				min-height: 500px;
+				position: relative;
+  				overflow: hidden;
+  				min-height: 600px;
+  				&::before {
+					content: "";
+					position: absolute;
+					width: 186%;
+					height: 200%;
+					top: -66%;
+					left: -45%;
+					z-index: -1;
+					background: url('../images/photo_fold3_join.png') no-repeat 50% 50%;
+					background-size: 105%;
+					transform-origin: left center;
+					transform: rotate(6deg);
+				}				
 			}
 			div.bloc2Fold3{
-				background-color: #1f1e24;				
+				background-color: @body-bg;	
+				min-height: 600px;		
+				color: #fff;	
+				padding-top: 125px;
+    			padding-left: 5%;	
+				p{
+					font-family: 'Proxima Nova Light';
+					background: url('../images/icon_validate.png') no-repeat 0 0;
+					background-size: 15px;
+				    text-indent: 30px;
+				    margin-left: 3%;
+				    &.title{
+						font-family: 'Gimme Danger';
+						background: none;
+					    font-size: 2em;
+					    text-indent: 0;
+					    margin-bottom: 45px;
+				    }
+				}
+				/* Form Mailchimp */
+				div#mc_embed_signup{
+					background: transparent;
+					margin-top: 60px;
+					div.mc-field-group{
+						width: 32%;
+    					display: inline-block;
+					}
+					div.clear{
+						display: inline-block;	
+						top: -8px;
+    					position: relative;
+    					input{
+							color: @brand-success;
+							border-radius: 0;
+							background-color: transparent;							
+							border: 1px solid @brand-success;    	
+							font-family: 'Proxima Nova Semibold';
+							padding: 6px 26%;
+						    height: auto;
+						    margin-left: 4px;
+						    margin-top: -7px;
+    						&:focus{
+    							outline-color: @brand-success;
+    						}
+    					}
+					}
+					input.email{
+						border: 0;
+						padding: 15px 0;
+						color: rgb(51,51,51);
+						font-family: 'Proxima Nova Light';
+    					text-indent: 15px;
+						&:focus{
+							outline-color: @brand-success;							
+						}
+					}					
+				}
+			}
+
+		}
+		div.fold4{
+			min-height: 850px;
+			background: url('../images/background_fold4.png') no-repeat 50% 0%;
+			background-size: 100%;
+			margin-top: -210px;
+			color: #fff;
+			p.title{
+				font-family: 'Gimme Danger';
+			    font-size: 2em;
+			    text-align: center;
+			    margin-top: 15px;
+    			margin-bottom: 70px;
+			}
+			p.nomEquipe{
+				font-family: 'Gimme Danger';
+			    font-size: 1.2em;
+    			line-height: 2em;
+			}
+			p.decro{
+				font-family: 'Proxima Nova Light';
+			}
+			div.social{
+				span{
+					display: inline-block;
+					height: 30px;
+					width:30px;
+    				margin-left: 5px;
+    				cursor: pointer;					
+				}
+				span.iconLinkedin{
+					background: url('../images/icon_linkedin.png') no-repeat 50% 50%;
+					background-size: 95%;
+				}
+				span.iconMail{					
+					background: url('../images/icon_mail.png') no-repeat 50% 50%;
+					background-size: 95%;    				
+				}
+			}
+			div.bloc1Fold4{
+				padding: 0% 9%;
+				div.photo{
+					background: url('../images/equipe1.png') no-repeat 50% 50%;
+					background-size: 100%;
+					height: 250px;
+				}
+			}
+			div.bloc2Fold4{
+				padding: 0% 9%;
+				div.photo{
+					background: url('../images/equipe2.png') no-repeat 50% 50%;
+					background-size: 100%;
+					height: 250px;
+				}
+			}
+			div.bloc3Fold4{
+				padding: 0% 9%;
+				div.photo{
+					background: url('../images/equipe3.png') no-repeat 50% 50%;
+					background-size: 100%;
+					height: 250px;
+				}
+			}
+		}
+
+
+		div.fold5{
+			background: url('../images/background_fold5.jpg') no-repeat 50% 0%;
+			background-size: 100%;
+			height: 414px;
+			padding-top: 90px;
+			div.bloc1Fold5{				
+				text-align: center;
+				p.title{
+					font-family: 'Gimme Danger';
+					color: #3b3b3b;
+					font-size: 2.2em;
+				}
+			}
+			div.bloc2Fold5{
+				height: 100%;
+				text-align: center;
+				div.logo{
+					height: 125px;
+				    width: 5%;
+				    display: inline-block;
+				    margin: 70px 3% 0;
+					&.monClub{
+						background: url('../images/logo_monclub.png') no-repeat 50% 50%;
+						background-size: 100%;
+					}
+					&.paysAix{
+						background: url('../images/logo_paysAix.png') no-repeat 50% 50%;
+						background-size: 100%;
+						width: 11%;
+					}
+					&.captronic{
+						background: url('../images/logo_captronic.png') no-repeat 50% 50%;
+						background-size: 100%;
+						width: 8%;
+					}
+					&.etienne{
+						background: url('../images/logo_etienne.png') no-repeat 50% 50%;
+						background-size: 100%;
+					}
+					&.cnrs{
+						background: url('../images/logo_cnrs.png') no-repeat 50% 50%;
+						background-size: 100%;
+					}
+					&.institut{
+						background: url('../images/logo_institut.png') no-repeat 50% 50%;
+						background-size: 100%;
+						width: 8%;
+					}
+					&.belleDeMai{
+						background: url('../images/logo_belledemai.png') no-repeat 50% 50%;
+						background-size: 100%;
+					}
+				}
+			}
+		}
+
+		div.fold6{
+			background: url('../images/background_fold6.png') no-repeat 50% 50%;
+			background-size: 100%;
+			min-height: 786px;
+			text-align: center;
+			color: #fff;
+			p.title{
+				font-family: 'Gimme Danger';
+			    font-size: 2.2em;
+			    margin-top: 172px;
+			    font-size: 3em;
+			    margin-bottom: 25px;
+			}
+			p.txt{
+				font-family: 'Proxima Nova Bold';
+				font-size: 1.2em;
+				padding: 0 20%;
+			}
+			button{
+				margin-top: 70px;
 			}
 		}
 	}	

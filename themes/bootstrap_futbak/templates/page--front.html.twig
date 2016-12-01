@@ -154,16 +154,138 @@
 
       <div class="row fold3">
         <div class="col-lg-6 bloc1Fold3">
+          <div class="wrapperHorizontal"></div>
 
         </div>
         <div class="col-lg-6 bloc2Fold3">
+          <div class="wrapperHorizontal">
 
-          <p class="title">Rejoins-nous</p>
-          <p class="phrase">Découvre en avant-première le lancement de FutBak</p>
-          <p class="phrase">Rejoins la communauté des utilisateurs  </p>
-          <p class="phrase">Reste informé de l’avancée du projet et deviens béta-testeur</p>
-          <p class="phrase">Contribue à l’amélioration de FutBak et de tes performances</p>
+            <p class="title">Rejoins-nous</p>
+            <p class="phrase">Découvre en avant-première le lancement de FutBak</p>
+            <p class="phrase">Rejoins la communauté des utilisateurs  </p>
+            <p class="phrase">Reste informé de l’avancée du projet et deviens béta-testeur</p>
+            <p class="phrase">Contribue à l’amélioration de FutBak et de tes performances</p>
 
+            <!-- Begin MailChimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+            <style type="text/css">
+            #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+            </style>
+            <div id="mc_embed_signup">
+            <form action="//natural-solutions.us7.list-manage.com/subscribe/post?u=1a9b21fb9d9d31564dd16e46e&amp;id=edd7cd7c9f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">            
+            <div class="mc-field-group">            
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Votre email">
+            </div>
+            <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1a9b21fb9d9d31564dd16e46e_edd7cd7c9f" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Envoyer" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+            </form>
+            </div>
+            <!--End mc_embed_signup-->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row fold4">        
+        <div class="col-lg-12">          
+          <p class="title">L’EQUIPE</p>
+        </div>
+        <div class="col-lg-12">          
+          <div class="row">          
+            <div class="col-lg-4 bloc1Fold4">
+              <div class="photo">              
+              </div>
+              <p class="nomEquipe">GABRIEL COHEN</p>
+              <p class="decro">Ingénieur développeur-produit et passionné de football depuis son enfance, il est le buteur de l’équipe, en charge de la commercialisation.</p>
+              <div class="social">
+                <span class="iconLinkedin"></span>
+                <span class="iconMail"></span>              
+              </div>
+            </div>
+            <div class="col-lg-4 bloc2Fold4">
+              <div class="photo">              
+              </div>
+              <p class="nomEquipe">BENJAMIN SIMEONI</p>
+              <p class="decro">Ingénieur statisticien et milieu offensif de la Team FutBak, il est à l’origine de l’architecture informatique (bases de données et statistiques) de ce nouveau concept.</p>
+              <div class="social">
+                <span class="iconLinkedin"></span>
+                <span class="iconMail"></span>              
+              </div>
+            </div>
+            <div class="col-lg-4 bloc3Fold4">
+              <div class="photo">              
+              </div>
+              <p class="nomEquipe">ALI OBEID</p>
+              <p class="decro">Docteur en micro-électronique et fou de foot, il est en charge de la conception des capteurs et du système de transmission des données recueillies avant leur analyse.</p>
+              <div class="social">
+                <span class="iconLinkedin"></span>
+                <span class="iconMail"></span>              
+              </div>
+            </div>          
+          </div>  
+        </div>
+      </div>
+
+      <div class="row fold5">
+        <div class="col-lg-12 bloc1Fold5">
+          <p class='title'>NOS PARTENAIRES</p>
+        </div>
+        <div class="col-lg-12 bloc2Fold5">
+          <div class="logo monClub"></div>
+          <div class="logo paysAix"></div>
+          <div class="logo captronic"></div>
+          <div class="logo etienne"></div>
+          <div class="logo cnrs"></div>
+          <div class="logo institut"></div>
+          <div class="logo belleDeMai"></div>
+        </div>
+      </div>
+
+      <div class="row fold6">
+        <div class="col-lg-12">
+          <p class="title">VOUS ETES GERANT DE SALLE</p>
+          <p class="txt"><strong>Démarquez-vous</strong> de vos concurrents, recrutez de nouveaux joueurs et gagnez de nouveaux supporters ! <strong>Concept innovant</strong> spécialement conçu pour les complexes de foot indoor, FutBak vous permet de prendre un <strong>avantage technologique</strong> décisif, dans un environnement désormais fortement concurrentiel, en <strong>fidélisant</strong> vos clients sur le long terme.</p>
+          <button class="btn btn-success" type="button">
+            EN SAVOIR PLUS
+          </button>
+        </div>
+      </div>
+
+  </div> {# fin main-container #}
+  
+{% endblock %}
+
+{% if page.footer %}
+  {% block footer %}
+    <footer class="footer {{ container }}" role="contentinfo">   
+
+      <div class="row">
+        <div class="col-lg-3 bloc1Footer"></div>
+        <div class="col-lg-3 bloc2Footer">
+          <p class="title">SUIVEZ NOUS</p>
+          <p class='fb'=>Facebook</p>
+          <p class='insta'>Instagram</p>
+          <p class='twt'>Twitter</p>
+        </div>
+        <div class="col-lg-3 bloc3Footer">
+          <p class="title">CONTACT</p>
+          <div class="iconPosition"></div>
+          <div class="labelPosition">
+            <p>53 chemin des Fleurs</p>
+            <p>00 33 (0)4 58 78 48 54</p>
+            <p>contact@sportbak.com</p>
+          </div>
+        </div>
+        <div class="col-lg-3 bloc4Footer">
+          <p class="title">RESTEZ INFORMé</p>
           <!-- Begin MailChimp Signup Form -->
           <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
           <style type="text/css">
@@ -173,42 +295,23 @@
           </style>
           <div id="mc_embed_signup">
           <form action="//natural-solutions.us7.list-manage.com/subscribe/post?u=1a9b21fb9d9d31564dd16e46e&amp;id=edd7cd7c9f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div id="mc_embed_signup_scroll">
-
-          <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-          <div class="mc-field-group">
-          <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-          </label>
-          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          <div id="mc_embed_signup_scroll">            
+          <div class="mc-field-group">            
+          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Votre email">
           </div>
           <div id="mce-responses" class="clear">
           <div class="response" id="mce-error-response" style="display:none"></div>
           <div class="response" id="mce-success-response" style="display:none"></div>
           </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
           <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1a9b21fb9d9d31564dd16e46e_edd7cd7c9f" tabindex="-1" value=""></div>
-          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          <div class="clear"><input type="submit" value="Envoyer" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
           </div>
           </form>
           </div>
-          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
           <!--End mc_embed_signup-->
-
         </div>
-      </div>
-
-      <div class="row fold4">
-        <div class="col-lg-12">          
-        </div>        
-      </div>
-
-  </div> {# fin main-container #}
-  
-{% endblock %}
-
-{% if page.footer %}
-  {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">      
-      {{ page.footer }}
+      </div>   
+      
     </footer>
   {% endblock %}
 {% endif %}
