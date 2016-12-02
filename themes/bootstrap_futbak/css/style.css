@@ -8628,12 +8628,12 @@ ul {
 }
 .footer div.bloc1Footer {
   background: url('../images/logo_futbak_footer.png') no-repeat 50% 100%;
-  background-size: 85%;
+  background-size: 75%;
   height: 418px;
 }
 .footer div.bloc2Footer {
   margin-top: 300px;
-  padding-left: 8%;
+  padding-left: 6%;
 }
 .footer div.bloc3Footer {
   margin-top: 300px;
@@ -8641,6 +8641,46 @@ ul {
 }
 .footer div.bloc4Footer {
   margin-top: 300px;
+  padding-left: 4%;
+}
+.footer div.bloc4Footer div#mc_embed_signup {
+  background: transparent;
+  margin-top: 20px;
+  margin-left: -20px;
+}
+.footer div.bloc4Footer div#mc_embed_signup div.mc-field-group {
+  width: 45%;
+  display: inline-block;
+}
+.footer div.bloc4Footer div#mc_embed_signup div.clear {
+  display: inline-block;
+  top: -8px;
+  position: relative;
+}
+.footer div.bloc4Footer div#mc_embed_signup div.clear input {
+  color: #398140;
+  border-radius: 0;
+  background-color: transparent;
+  border: 1px solid #398140;
+  font-family: 'Proxima Nova Semibold';
+  padding: 7px 26%;
+  height: auto;
+  margin-left: 4px;
+  margin-top: -8px;
+}
+.footer div.bloc4Footer div#mc_embed_signup div.clear input:focus {
+  outline-color: #398140;
+  border-color: #398140;
+}
+.footer div.bloc4Footer div#mc_embed_signup input.email {
+  border: 1px solid #4e4e4e;
+  padding: 15px 0;
+  color: #333333;
+  font-family: 'Proxima Nova Light';
+  text-indent: 15px;
+}
+.footer div.bloc4Footer div#mc_embed_signup input.email:focus {
+  outline-color: #398140;
 }
 .footer p {
   font-family: 'Proxima Nova Semibold';
@@ -8744,11 +8784,12 @@ body.path-frontpage header.navbar.reduce ul {
   padding-bottom: 12px;
 }
 body.path-frontpage div.main-container {
+  overflow-x: hidden;
   margin-top: -60px;
 }
 body.path-frontpage div.main-container div.fold1 {
   padding-top: 60px;
-  background: url('../images/background_fold1.jpg') no-repeat 50% 0%;
+  background: url('../images/background_fold1.jpg') no-repeat 100% 0%;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -8775,6 +8816,8 @@ body.path-frontpage div.main-container div.fold1 div.blocFold1 p.slogan {
   letter-spacing: 10px;
   text-transform: uppercase;
   font-size: 3em;
+  max-width: 50%;
+  line-height: 75px;
 }
 body.path-frontpage div.main-container div.fold1 div.blocFold1 p.slogan span {
   color: #398140;
@@ -8789,6 +8832,7 @@ body.path-frontpage div.main-container div.fold1 div.blocFold1 p.postSlogan {
   margin-top: 30px;
   width: 45%;
   font-size: 1.1em;
+  text-shadow: 0px 0px 4px #000;
 }
 body.path-frontpage div.main-container div.fold2 {
   background: url('../images/background_fold2.png') no-repeat 50% 0%;
@@ -8798,12 +8842,12 @@ body.path-frontpage div.main-container div.fold2 {
   padding-top: 160px;
 }
 body.path-frontpage div.main-container div.fold2 div.bloc1Fold2 {
-  background: url('../images/background_bloc1_fold2.png') no-repeat 50% 0%;
-  background-size: 70%;
+  background: url('../images/background_bloc1_fold2.png') no-repeat 50% 99px;
+  background-size: 58%;
 }
 body.path-frontpage div.main-container div.fold2 div.bloc2Fold2 {
-  background: url('../images/background_bloc2_fold2.png') no-repeat 54% 0%;
-  background-size: 70%;
+  background: url('../images/background_bloc2_fold2.png') no-repeat 54% -15px;
+  background-size: 73%;
 }
 body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 {
   background: url('../images/background_bloc3_fold2.png') no-repeat 50% 0%;
@@ -8832,7 +8876,7 @@ body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 p.subTitle {
 body.path-frontpage div.main-container div.fold3 {
   transform-origin: left center;
   transform: rotate(-6deg);
-  width: 102%;
+  width: 103%;
   margin-left: -3%;
   background-color: #1f1e24;
 }
@@ -8849,12 +8893,12 @@ body.path-frontpage div.main-container div.fold3 div.bloc1Fold3::before {
   content: "";
   position: absolute;
   width: 186%;
-  height: 200%;
-  top: -66%;
+  height: 1110px;
+  top: -490px;
   left: -45%;
   z-index: -1;
-  background: url('../images/photo_fold3_join.png') no-repeat 50% 50%;
-  background-size: 105%;
+  background: url('../images/photo_fold3_join.png') no-repeat 50% 0;
+  background-size: 108%;
   transform-origin: left center;
   transform: rotate(6deg);
 }
@@ -8899,10 +8943,10 @@ body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div#mc_embed_sig
   background-color: transparent;
   border: 1px solid #398140;
   font-family: 'Proxima Nova Semibold';
-  padding: 6px 26%;
+  padding: 7px 26%;
   height: auto;
   margin-left: 4px;
-  margin-top: -7px;
+  margin-top: -8px;
 }
 body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div#mc_embed_signup div.clear input:focus {
   outline-color: #398140;
@@ -9054,5 +9098,203 @@ body.path-frontpage div.main-container div.fold6 p.txt {
 }
 body.path-frontpage div.main-container div.fold6 button {
   margin-top: 70px;
+}
+@media (max-width: 1900px) {
+  body.path-frontpage div.main-container div.fold3 div.bloc1Fold3::before {
+    background-size: 119%;
+    width: 180%;
+  }
+}
+@media (max-width: 1800px) {
+  body.path-frontpage div.main-container div.fold2 div.bloc1Fold2 {
+    background-position-y: 124px;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc2Fold2 {
+    background-position-y: 16px;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 {
+    background-position-y: 50px;
+  }
+  body.path-frontpage div.main-container div.fold3 div.bloc1Fold3::before {
+    background-size: 133%;
+    width: 172%;
+  }
+}
+@media (max-width: 1734px) {
+  body.path-frontpage div.main-container div.fold1 div.blocFold1 p.postSlogan {
+    text-align: justify;
+  }
+}
+@media (max-width: 1700px) {
+  body.path-frontpage div.main-container div.fold2 div.bloc1Fold2 {
+    background-position-y: 155px;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc2Fold2 {
+    background-position-y: 31px;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 {
+    background-position-y: 80px;
+  }
+  body.path-frontpage div.main-container div.fold3 {
+    margin-top: -55px;
+  }
+  body.path-frontpage div.main-container div.fold3 div.bloc1Fold3::before {
+    background-size: 149%;
+    width: 164%;
+  }
+}
+@media (max-width: 1600px) {
+  body.path-frontpage div.main-container div.fold2 div.bloc1Fold2 {
+    background-position-y: 125px;
+    padding-top: 510px;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc2Fold2 {
+    background-position-y: 32px;
+    padding-top: 510px;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 {
+    background-position-y: 60px;
+    padding-top: 510px;
+  }
+  body.path-frontpage div.main-container div.fold3 {
+    margin-top: -125px;
+  }
+  body.path-frontpage div.main-container div.fold3 div.bloc1Fold3::before {
+    background-size: 165%;
+    width: 157%;
+  }
+}
+@media (max-width: 1500px) {
+  body.path-frontpage div.main-container div.fold3 div.bloc1Fold3 {
+    position: relative;
+    overflow: hidden;
+    min-height: 515px;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc1Fold2,
+  body.path-frontpage div.main-container div.fold2 div.bloc2Fold2,
+  body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 {
+    padding-top: 470px;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc1Fold2 p.subTitle,
+  body.path-frontpage div.main-container div.fold2 div.bloc2Fold2 p.subTitle,
+  body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 p.subTitle {
+    width: 53%;
+    text-align: justify;
+  }
+  body.path-frontpage div.main-container div.fold2 {
+    min-height: 1045px;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc1Fold2 {
+    background-position-y: 40px;
+    background-size: 68%;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc2Fold2 {
+    background-position-y: -56px;
+    background-size: 84%;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 {
+    background-position-y: -54px;
+    background-size: 100%;
+  }
+  body.path-frontpage div.main-container div.fold3 {
+    margin-top: -130px;
+  }
+  body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 {
+    min-height: auto;
+  }
+}
+@media (max-width: 1400px) {
+  body.path-frontpage div.main-container div.fold2 {
+    background-size: 130%;
+    min-height: 900px;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc1Fold2,
+  body.path-frontpage div.main-container div.fold2 div.bloc2Fold2,
+  body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 {
+    padding-top: 445px;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc1Fold2 {
+    background-position-y: 40px;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc2Fold2 {
+    background-position-y: -47px;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 {
+    background-position-y: -33px;
+  }
+  body.path-frontpage div.main-container div.fold3 {
+    margin-top: -10px;
+  }
+  body.path-frontpage div.main-container div.fold3 div.bloc1Fold3 {
+    min-height: 435px;
+  }
+  body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 1300px) {
+  body.path-frontpage div.main-container div.fold2 {
+    background-position-x: 100%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc1Fold2,
+  body.path-frontpage div.main-container div.fold2 div.bloc2Fold2,
+  body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 {
+    padding-top: 404px;
+  }
+}
+@media (max-width: 1200px) {
+  body.path-frontpage div.main-container div.fold1 {
+    background: url('../images/background_fold1_1200px.jpg') no-repeat 100% 0%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+  }
+  body.path-frontpage div.main-container div.fold2 {
+    background-position-x: 100%;
+    padding-bottom: 150px;
+    height: 2400px;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc1Fold2,
+  body.path-frontpage div.main-container div.fold2 div.bloc2Fold2,
+  body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 {
+    background-size: 360px;
+    width: 100%;
+    padding: 0;
+    padding-top: 420px;
+    background-position-y: -30px;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc1Fold2 p.subTitle,
+  body.path-frontpage div.main-container div.fold2 div.bloc2Fold2 p.subTitle,
+  body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 p.subTitle {
+    width: 20%;
+    text-align: justify;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc1Fold2.bloc2Fold2,
+  body.path-frontpage div.main-container div.fold2 div.bloc2Fold2.bloc2Fold2,
+  body.path-frontpage div.main-container div.fold2 div.bloc3Fold2.bloc2Fold2 {
+    background-position-x: 50%;
+    background-size: 448px;
+    padding-top: 530px;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc1Fold2.bloc3Fold2,
+  body.path-frontpage div.main-container div.fold2 div.bloc2Fold2.bloc3Fold2,
+  body.path-frontpage div.main-container div.fold2 div.bloc3Fold2.bloc3Fold2 {
+    background-size: 505px;
+    padding-top: 506px;
+    background-position-x: 48%;
+  }
+}
+@media (max-width: 992px) {
+  /* body.path-frontpage div.main-container div.fold1 div.blocFold1 {	    
+		    text-align: center;
+		} */
+  body.path-frontpage div.main-container div.fold2 div.bloc1Fold2 p.subTitle,
+  body.path-frontpage div.main-container div.fold2 div.bloc2Fold2 p.subTitle,
+  body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 p.subTitle {
+    width: 30%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -54,10 +54,11 @@ body.path-frontpage{
 	}
 
 	div.main-container{
+		overflow-x: hidden;
 		margin-top: -60px;		
 		div.fold1{		
 			padding-top: 60px;
-			background: url('../images/background_fold1.jpg') no-repeat 50% 0%;
+			background: url('../images/background_fold1.jpg') no-repeat 100% 0%;
 			background-size: cover;
 			-moz-background-size: cover;
 			-webkit-background-size: cover;
@@ -82,6 +83,8 @@ body.path-frontpage{
 				    letter-spacing: 10px;
 				    text-transform: uppercase;
 				    font-size: 3em;
+				    max-width: 50%;
+    				line-height: 75px;
 				    span{
 				    	color: @brand-success;
 				    	&.virgule{
@@ -96,6 +99,7 @@ body.path-frontpage{
 				    margin-top: 30px;
 				    width: 45%;
 				    font-size: 1.1em;
+				    text-shadow: 0px 0px 4px #000;
 				}
 			}
 		}
@@ -106,12 +110,12 @@ body.path-frontpage{
 			margin-top: -192px;
 			padding-top: 160px;			
     		div.bloc1Fold2{
-    			background: url('../images/background_bloc1_fold2.png') no-repeat 50% 0%;
-    			background-size: 70%;
+    			background: url('../images/background_bloc1_fold2.png') no-repeat 50% 99px;
+				background-size: 58%;
     		}
     		div.bloc2Fold2{
-    			background: url('../images/background_bloc2_fold2.png') no-repeat 54% 0%;    			
-    			background-size: 70%;
+    			background: url('../images/background_bloc2_fold2.png') no-repeat 54% -15px;
+    			background-size: 73%;
     		}
     		div.bloc3Fold2{
     			background: url('../images/background_bloc3_fold2.png') no-repeat 50% 0%;    			
@@ -135,7 +139,7 @@ body.path-frontpage{
 		div.fold3{
 			transform-origin: left center;
 			transform: rotate(-6deg);
-			width: 102%;
+			width: 103%;
 			margin-left: -3%;			
 			background-color: @body-bg;
 			div.wrapperHorizontal{
@@ -150,12 +154,12 @@ body.path-frontpage{
 					content: "";
 					position: absolute;
 					width: 186%;
-					height: 200%;
-					top: -66%;
+					height: 1110px;
+					top: -490px;
 					left: -45%;
 					z-index: -1;
-					background: url('../images/photo_fold3_join.png') no-repeat 50% 50%;
-					background-size: 105%;
+					background: url('../images/photo_fold3_join.png') no-repeat 50% 0;
+					background-size: 108%;
 					transform-origin: left center;
 					transform: rotate(6deg);
 				}				
@@ -198,10 +202,10 @@ body.path-frontpage{
 							background-color: transparent;							
 							border: 1px solid @brand-success;    	
 							font-family: 'Proxima Nova Semibold';
-							padding: 6px 26%;
-						    height: auto;
-						    margin-left: 4px;
-						    margin-top: -7px;
+							padding: 7px 26%;
+							height: auto;
+							margin-left: 4px;
+							margin-top: -8px;
     						&:focus{
     							outline-color: @brand-success;
     						}
@@ -366,3 +370,230 @@ body.path-frontpage{
 		}
 	}	
 }  
+// En dessous de 1900px 
+@media (max-width : 1900px) {  
+	body.path-frontpage div.main-container div.fold3 div.bloc1Fold3::before {
+	    background-size: 119%;
+    	width: 180%;
+	}    
+}
+
+// En dessous de 1800px 
+@media (max-width : 1800px) {  
+    body.path-frontpage div.main-container {
+    	div.fold2 { 	    	
+	    	div.bloc1Fold2{
+	    		background-position-y : 124px;	    		
+	    	}
+	    	div.bloc2Fold2{
+	    		background-position-y: 16px;
+	    	}
+	    	div.bloc3Fold2{
+				background-position-y: 50px;
+	    	}
+    	}
+		div.fold3 div.bloc1Fold3::before {		
+			background-size: 133%;
+    		width: 172%;
+		}
+    }  
+}
+// En dessous de 1735px 
+@media (max-width : 1734px) {   
+	body.path-frontpage div.main-container div.fold1 div.blocFold1 p.postSlogan{    
+    	text-align: justify;
+	}
+}
+// En dessous de 1700px 
+@media (max-width : 1700px) {  
+    body.path-frontpage div.main-container{ 
+    	div.fold2 { 
+	    	div.bloc1Fold2{
+	    		background-position-y : 155px;	    		
+	    	}
+	    	div.bloc2Fold2{
+	    		background-position-y: 31px;
+	    	}
+	    	div.bloc3Fold2{
+				background-position-y: 80px;
+	    	}
+    	}
+    	div.fold3{ 
+    	    margin-top: -55px;	
+    	    div.bloc1Fold3::before{
+    	    	background-size: 149%;
+    			width: 164%;
+    	    }
+	    }
+	}     
+}
+// En dessous de 1600px 
+@media (max-width : 1600px) {  
+    body.path-frontpage div.main-container {    	
+    	div.fold2 { 
+	    	div.bloc1Fold2{
+	    		background-position-y : 125px;
+	    		padding-top: 510px;
+	    	}
+	    	div.bloc2Fold2{
+	    		background-position-y: 32px;
+	    		padding-top: 510px;
+	    	}
+	    	div.bloc3Fold2{
+				background-position-y: 60px;
+				padding-top: 510px;
+	    	}
+	    }
+	    div.fold3{     
+	        margin-top: -125px;	    
+    	    div.bloc1Fold3::before{
+    	    	background-size: 165%;
+    			width: 157%;
+    	    }
+	    }
+    }
+}
+// En dessous de 1500px 
+@media (max-width : 1500px) {  
+	body.path-frontpage div.main-container div.fold3 div.bloc1Fold3 {
+    	position: relative;
+    	overflow: hidden;
+    	min-height: 515px;
+	}
+	body.path-frontpage div.main-container div.fold2 div.bloc1Fold2,
+	body.path-frontpage div.main-container div.fold2 div.bloc2Fold2, 
+	body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 {
+    	padding-top: 470px;
+    	p.subTitle{
+		    width: 53%;
+		    text-align: justify;    		
+    	}
+	}
+    body.path-frontpage div.main-container {
+    	div.fold2 { 
+    		min-height: 1045px;
+	    	div.bloc1Fold2{
+	    		background-position-y: 40px;
+	    		background-size: 68%;
+	    	}
+	    	div.bloc2Fold2{
+			    background-position-y: -56px;
+				background-size: 84%;
+	    	}
+	    	div.bloc3Fold2{
+				background-position-y: -54px;
+	    		background-size: 100%;
+	    	}
+	    }
+	    div.fold3 {
+    		margin-top: -130px;
+    		div.bloc2Fold3 {			
+			    min-height: auto;
+			}
+		}
+    }    
+}
+// En dessous de 1400px 
+@media (max-width : 1400px) {  
+	body.path-frontpage div.main-container {
+		div.fold2 {
+			background-size: 130%;
+	    	min-height: 900px;
+			div.bloc1Fold2, 
+			div.bloc2Fold2, 
+			div.bloc3Fold2 {
+		    	padding-top: 445px;
+			}
+	    	div.bloc1Fold2{
+	    		background-position-y: 40px;
+	    	}
+	    	div.bloc2Fold2{
+	    		background-position-y: -47px
+	    	}
+	    	div.bloc3Fold2{
+				background-position-y: -33px;
+	    	}
+		}
+	    div.fold3{ 
+	    	margin-top: -10px;
+	    	div.bloc1Fold3{
+	    		min-height: 435px;
+	    	}
+	    	div.bloc2Fold3 {			
+			    padding-top: 50px;
+			}
+	    }
+		
+	}
+    
+}
+
+// En dessous de 1300px 
+@media (max-width : 1300px) {  
+	body.path-frontpage div.main-container div.fold2 {
+	    background-position-x: 100%;    
+	    background-size: cover;
+	    -moz-background-size: cover;
+	    -webkit-background-size: cover;
+	}
+	body.path-frontpage div.main-container div.fold2 div.bloc1Fold2, 
+	body.path-frontpage div.main-container div.fold2 div.bloc2Fold2, 
+	body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 {    
+		padding-top: 404px;
+	}
+}
+
+// En dessous de 1200px 
+@media (max-width : @screen-lg-desktop) {  
+	body.path-frontpage div.main-container div.fold1 {
+		background: url('../images/background_fold1_1200px.jpg') no-repeat 100% 0%;
+		background-size: cover;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;		
+	}
+	body.path-frontpage div.main-container div.fold2 {
+	    background-position-x: 100%;	    
+	    padding-bottom: 150px;
+	    height: 2400px;
+	}
+	body.path-frontpage div.main-container div.fold2 div.bloc1Fold2, 
+	body.path-frontpage div.main-container div.fold2 div.bloc2Fold2, 
+	body.path-frontpage div.main-container div.fold2 div.bloc3Fold2{
+		background-size: 360px;
+	    width: 100%;
+	    padding: 0;
+	    padding-top: 420px;
+	    background-position-y: -30px;
+	    p.subTitle{
+	    	width: 20%;
+    		text-align: justify;
+	    }
+	    &.bloc2Fold2{
+	    	background-position-x: 50%;
+			background-size: 448px;
+			padding-top: 530px;
+	    }
+	    &.bloc3Fold2{	    	
+			background-size: 505px;
+			padding-top: 506px;
+			background-position-x: 48%;
+	    }
+	}
+
+} 
+// En dessous de 992px 
+@media (max-width : @screen-desktop) {	
+	/* body.path-frontpage div.main-container div.fold1 div.blocFold1 {	    
+		    text-align: center;
+		} */	
+	body.path-frontpage div.main-container div.fold2 div.bloc1Fold2 p.subTitle, 
+	body.path-frontpage div.main-container div.fold2 div.bloc2Fold2 p.subTitle, 
+	body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 p.subTitle {
+    	width: 30%;    
+	}
+}
+@media (max-width : @screen-tablet) {	
+}
+@media (max-width : @screen-phone) {
+
+}
