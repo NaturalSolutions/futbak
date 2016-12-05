@@ -127,6 +127,7 @@ body.path-frontpage{
 				color : #fff;					
 				p.title{
 					font-family: 'Gimme Danger';
+					text-transform: uppercase;
 				}
 				p.subTitle{
 					font-family: 'Proxima Nova Thin';	
@@ -171,17 +172,22 @@ body.path-frontpage{
 				padding-top: 125px;
     			padding-left: 5%;	
 				p{
-					font-family: 'Proxima Nova Light';
-					background: url('../images/icon_validate.png') no-repeat 0 0;
+					font-family: 'Proxima Nova Thin';
+					background: url('../images/icon_validate.png') no-repeat 0 5px;
 					background-size: 15px;
 				    text-indent: 30px;
 				    margin-left: 3%;
-				    &.title{
+				    font-size: 1.1em;
+				    strong{
+				    	color: #fff;
+				    }
+				    &.title{ 
 						font-family: 'Gimme Danger';
 						background: none;
 					    font-size: 2em;
 					    text-indent: 0;
 					    margin-bottom: 45px;
+					    text-transform: uppercase;
 				    }
 				}
 				/* Form Mailchimp */
@@ -226,7 +232,7 @@ body.path-frontpage{
 
 		}
 		div.fold4{
-			min-height: 850px;
+			min-height: 890px;
 			background: url('../images/background_fold4.png') no-repeat 50% 0%;
 			background-size: 100%;
 			margin-top: -210px;
@@ -235,8 +241,8 @@ body.path-frontpage{
 				font-family: 'Gimme Danger';
 			    font-size: 2em;
 			    text-align: center;
-			    margin-top: 15px;
-    			margin-bottom: 70px;
+			    margin-top: 0;
+    			margin-bottom: 33px;
 			}
 			p.nomEquipe{
 				font-family: 'Gimme Danger';
@@ -245,6 +251,13 @@ body.path-frontpage{
 			}
 			p.decro{
 				font-family: 'Proxima Nova Light';
+			}
+			p.subTitle{
+				text-align: center;
+				font-family: "Proxima Nova"; 
+				padding: 0 26%;
+			    padding-bottom: 50px;
+			    font-size: 1.1em;
 			}
 			div.social{
 				span{
@@ -266,7 +279,7 @@ body.path-frontpage{
 			div.bloc1Fold4{
 				padding: 0% 9%;
 				div.photo{
-					background: url('../images/equipe1.png') no-repeat 50% 50%;
+					background: url('../images/equipe3.png') no-repeat 50% 50%;
 					background-size: 100%;
 					height: 250px;
 				}
@@ -274,7 +287,7 @@ body.path-frontpage{
 			div.bloc2Fold4{
 				padding: 0% 9%;
 				div.photo{
-					background: url('../images/equipe2.png') no-repeat 50% 50%;
+					background: url('../images/equipe1.png') no-repeat 50% 50%;
 					background-size: 100%;
 					height: 250px;
 				}
@@ -282,7 +295,7 @@ body.path-frontpage{
 			div.bloc3Fold4{
 				padding: 0% 9%;
 				div.photo{
-					background: url('../images/equipe3.png') no-repeat 50% 50%;
+					background: url('../images/equipe2.png') no-repeat 50% 50%;
 					background-size: 100%;
 					height: 250px;
 				}
@@ -301,12 +314,17 @@ body.path-frontpage{
 					font-family: 'Gimme Danger';
 					color: #3b3b3b;
 					font-size: 2.2em;
+					text-transform: uppercase;
 				}
 			}
 			div.bloc2Fold5{
 				height: 100%;
 				text-align: center;
-				div.logo{
+				div.swiper-container { 
+					width: 100%;
+    				margin-top: 100px;
+				} 
+				/* div.logo{
 					height: 125px;
 				    width: 5%;
 				    display: inline-block;
@@ -342,7 +360,7 @@ body.path-frontpage{
 						background: url('../images/logo_belledemai.png') no-repeat 50% 50%;
 						background-size: 100%;
 					}
-				}
+				} */
 			}
 		}
 
@@ -360,7 +378,7 @@ body.path-frontpage{
 			    margin-bottom: 25px;
 			}
 			p.txt{
-				font-family: 'Proxima Nova Bold';
+				font-family: 'Proxima Nova Thin';
 				font-size: 1.2em;
 				padding: 0 20%;
 			}

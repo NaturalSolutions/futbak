@@ -13,12 +13,37 @@ jQuery( document ).ready(function() {
 
 	};
 
-  window.init = function() {  	
+	var scrollToAncre = function(){
+		jQuery('a[href^="#"], button.ancre[href^="#"]').click(function(){  
+		    var id = jQuery(this).attr("href");
+		    var offset = jQuery(id).offset().top 
+		    jQuery('html, body').animate({scrollTop: offset}, 'slow'); 
+		    return false;  
+		});
+	}
 
-	/*Fonction qui check si l'utilisateur scroll dans la page pour modifier le style du header*/
-    checkHeader();
-    
-  }
+	var setSlider = function(){
+		//slideshow on en parle
+		var mySwiper = new Swiper ('.fold5 .swiper-container', {
+			
+			slidesPerView: 7,
+	        spaceBetween : 100,
+	        loopedSlides : 4,
+	        //slideToClickedSlide : true,
+	        autoplay : 2500,
+	        loop: true
+
+		})
+
+	}
+
+	window.init = function() {  	
+		/* Fonction qui check si l'utilisateur scroll dans la page pour modifier le style du header */
+		checkHeader();
+		scrollToAncre();
+		setSlider();
+
+	}
   
   init(); // true 
 });

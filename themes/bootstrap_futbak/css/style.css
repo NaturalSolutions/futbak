@@ -8864,6 +8864,7 @@ body.path-frontpage div.main-container div.fold2 div.bloc1Fold2 p.title,
 body.path-frontpage div.main-container div.fold2 div.bloc2Fold2 p.title,
 body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 p.title {
   font-family: 'Gimme Danger';
+  text-transform: uppercase;
 }
 body.path-frontpage div.main-container div.fold2 div.bloc1Fold2 p.subTitle,
 body.path-frontpage div.main-container div.fold2 div.bloc2Fold2 p.subTitle,
@@ -8911,11 +8912,15 @@ body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 {
   /* Form Mailchimp */
 }
 body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 p {
-  font-family: 'Proxima Nova Light';
-  background: url('../images/icon_validate.png') no-repeat 0 0;
+  font-family: 'Proxima Nova Thin';
+  background: url('../images/icon_validate.png') no-repeat 0 5px;
   background-size: 15px;
   text-indent: 30px;
   margin-left: 3%;
+  font-size: 1.1em;
+}
+body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 p strong {
+  color: #fff;
 }
 body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 p.title {
   font-family: 'Gimme Danger';
@@ -8923,6 +8928,7 @@ body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 p.title {
   font-size: 2em;
   text-indent: 0;
   margin-bottom: 45px;
+  text-transform: uppercase;
 }
 body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div#mc_embed_signup {
   background: transparent;
@@ -8962,7 +8968,7 @@ body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div#mc_embed_sig
   outline-color: #398140;
 }
 body.path-frontpage div.main-container div.fold4 {
-  min-height: 850px;
+  min-height: 890px;
   background: url('../images/background_fold4.png') no-repeat 50% 0%;
   background-size: 100%;
   margin-top: -210px;
@@ -8972,8 +8978,8 @@ body.path-frontpage div.main-container div.fold4 p.title {
   font-family: 'Gimme Danger';
   font-size: 2em;
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 70px;
+  margin-top: 0;
+  margin-bottom: 33px;
 }
 body.path-frontpage div.main-container div.fold4 p.nomEquipe {
   font-family: 'Gimme Danger';
@@ -8982,6 +8988,13 @@ body.path-frontpage div.main-container div.fold4 p.nomEquipe {
 }
 body.path-frontpage div.main-container div.fold4 p.decro {
   font-family: 'Proxima Nova Light';
+}
+body.path-frontpage div.main-container div.fold4 p.subTitle {
+  text-align: center;
+  font-family: "Proxima Nova";
+  padding: 0 26%;
+  padding-bottom: 50px;
+  font-size: 1.1em;
 }
 body.path-frontpage div.main-container div.fold4 div.social span {
   display: inline-block;
@@ -9002,7 +9015,7 @@ body.path-frontpage div.main-container div.fold4 div.bloc1Fold4 {
   padding: 0% 9%;
 }
 body.path-frontpage div.main-container div.fold4 div.bloc1Fold4 div.photo {
-  background: url('../images/equipe1.png') no-repeat 50% 50%;
+  background: url('../images/equipe3.png') no-repeat 50% 50%;
   background-size: 100%;
   height: 250px;
 }
@@ -9010,7 +9023,7 @@ body.path-frontpage div.main-container div.fold4 div.bloc2Fold4 {
   padding: 0% 9%;
 }
 body.path-frontpage div.main-container div.fold4 div.bloc2Fold4 div.photo {
-  background: url('../images/equipe2.png') no-repeat 50% 50%;
+  background: url('../images/equipe1.png') no-repeat 50% 50%;
   background-size: 100%;
   height: 250px;
 }
@@ -9018,7 +9031,7 @@ body.path-frontpage div.main-container div.fold4 div.bloc3Fold4 {
   padding: 0% 9%;
 }
 body.path-frontpage div.main-container div.fold4 div.bloc3Fold4 div.photo {
-  background: url('../images/equipe3.png') no-repeat 50% 50%;
+  background: url('../images/equipe2.png') no-repeat 50% 50%;
   background-size: 100%;
   height: 250px;
 }
@@ -9035,47 +9048,52 @@ body.path-frontpage div.main-container div.fold5 div.bloc1Fold5 p.title {
   font-family: 'Gimme Danger';
   color: #3b3b3b;
   font-size: 2.2em;
+  text-transform: uppercase;
 }
 body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 {
   height: 100%;
   text-align: center;
+  /* div.logo{
+					height: 125px;
+				    width: 5%;
+				    display: inline-block;
+				    margin: 70px 3% 0;
+					&.monClub{
+						background: url('../images/logo_monclub.png') no-repeat 50% 50%;
+						background-size: 100%;
+					}
+					&.paysAix{
+						background: url('../images/logo_paysAix.png') no-repeat 50% 50%;
+						background-size: 100%;
+						width: 11%;
+					}
+					&.captronic{
+						background: url('../images/logo_captronic.png') no-repeat 50% 50%;
+						background-size: 100%;
+						width: 8%;
+					}
+					&.etienne{
+						background: url('../images/logo_etienne.png') no-repeat 50% 50%;
+						background-size: 100%;
+					}
+					&.cnrs{
+						background: url('../images/logo_cnrs.png') no-repeat 50% 50%;
+						background-size: 100%;
+					}
+					&.institut{
+						background: url('../images/logo_institut.png') no-repeat 50% 50%;
+						background-size: 100%;
+						width: 8%;
+					}
+					&.belleDeMai{
+						background: url('../images/logo_belledemai.png') no-repeat 50% 50%;
+						background-size: 100%;
+					}
+				} */
 }
-body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.logo {
-  height: 125px;
-  width: 5%;
-  display: inline-block;
-  margin: 70px 3% 0;
-}
-body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.logo.monClub {
-  background: url('../images/logo_monclub.png') no-repeat 50% 50%;
-  background-size: 100%;
-}
-body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.logo.paysAix {
-  background: url('../images/logo_paysAix.png') no-repeat 50% 50%;
-  background-size: 100%;
-  width: 11%;
-}
-body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.logo.captronic {
-  background: url('../images/logo_captronic.png') no-repeat 50% 50%;
-  background-size: 100%;
-  width: 8%;
-}
-body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.logo.etienne {
-  background: url('../images/logo_etienne.png') no-repeat 50% 50%;
-  background-size: 100%;
-}
-body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.logo.cnrs {
-  background: url('../images/logo_cnrs.png') no-repeat 50% 50%;
-  background-size: 100%;
-}
-body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.logo.institut {
-  background: url('../images/logo_institut.png') no-repeat 50% 50%;
-  background-size: 100%;
-  width: 8%;
-}
-body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.logo.belleDeMai {
-  background: url('../images/logo_belledemai.png') no-repeat 50% 50%;
-  background-size: 100%;
+body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.swiper-container {
+  width: 100%;
+  margin-top: 100px;
 }
 body.path-frontpage div.main-container div.fold6 {
   background: url('../images/background_fold6.png') no-repeat 50% 50%;
@@ -9092,7 +9110,7 @@ body.path-frontpage div.main-container div.fold6 p.title {
   margin-bottom: 25px;
 }
 body.path-frontpage div.main-container div.fold6 p.txt {
-  font-family: 'Proxima Nova Bold';
+  font-family: 'Proxima Nova Thin';
   font-size: 1.2em;
   padding: 0 20%;
 }
