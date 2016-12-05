@@ -28,7 +28,7 @@ jQuery( document ).ready(function() {
 			
 			slidesPerView: 7,
 	        spaceBetween : 100,
-	        loopedSlides : 7,	        
+	        /*loopedSlides : 4,	        */
 	        /*autoplay : 2500,*/
 	        loop: true
 

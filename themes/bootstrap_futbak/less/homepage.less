@@ -326,6 +326,27 @@ body.path-frontpage{
 					cursor: move;
 					width: 100%;
     				margin-top: 100px;
+    				div.swiper-slide{
+						-webkit-filter: grayscale(100%); 
+						-webkit-transition: .5s ease-in-out;
+						-moz-filter: grayscale(100%); 
+						-moz-transition: .5s ease-in-out;
+						-o-filter: grayscale(100%); 
+						-o-transition: .5s ease-in-out;
+	    				&:hover{
+							-webkit-filter: grayscale(0%);
+							-webkit-transition: .5s ease-in-out;
+							-moz-filter: grayscale(0%);
+							-moz-transition: .5s ease-in-out;
+							-o-filter: grayscale(0%);
+							-o-transition: .5s ease-in-out;
+	    				}
+	    				&.belleDeMai img,
+	    				&.cnrs img,
+	    				&.etienne img{
+	    					height: 100px
+	    				}
+    				}
 				} 
 				/* div.logo{
 					height: 125px;
@@ -381,6 +402,7 @@ body.path-frontpage{
 			    margin-top: 172px;
 			    font-size: 3em;
 			    margin-bottom: 25px;
+			    line-height: 2em;
 			}
 			p.txt{
 				font-family: 'Proxima Nova Thin';
@@ -657,6 +679,7 @@ body.path-frontpage{
 			div.bloc2Fold3{
 				padding-top: 150px;
     			padding-left: 29%;
+    			width: 100%;
 			}
 		}
 		div.fold4 {
