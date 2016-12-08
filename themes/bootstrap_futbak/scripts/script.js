@@ -27,9 +27,8 @@ jQuery( document ).ready(function() {
 		var mySwiper = new Swiper ('.fold5 .swiper-container', {
 			
 			slidesPerView: 7,
-	        spaceBetween : 100,
-	        /*loopedSlides : 4,	        */
-	        /*autoplay : 2500,*/
+	        spaceBetween : 100,	        
+	        autoplay : 2500,
 	        loop: true
 
 		})

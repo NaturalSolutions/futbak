@@ -7277,13 +7277,14 @@ body .nav > li {
 }
 body .nav > li > a {
   font-family: 'Proxima Nova';
-  padding-top: 20px;
-  padding-bottom: 3px;
+  padding-top: 30px;
+  padding-bottom: 0;
   text-transform: uppercase;
   color: #fff !important;
   padding-right: 0;
   padding-left: 0;
   min-height: 44px;
+  border-bottom: 1px solid transparent;
 }
 body .nav > li > a:hover {
   font-weight: bold;
@@ -7296,8 +7297,8 @@ body header.navbar {
 body header.navbar .navbar-brand {
   background: url('../images/logo_futbak.png') no-repeat 50% 50% transparent;
   background-size: 100%;
-  min-height: 60px;
-  min-width: 150px;
+  min-height: 70px;
+  min-width: 200px;
   margin-left: 1% !important;
   margin-top: 20px;
   position: absolute;
@@ -7760,6 +7761,10 @@ fieldset[disabled] .btn-default.focus {
   bottom: -5px;
   border: 1px solid #ff7815;
 }
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: #ff7815 !important;
+}
 .btn-primary:focus,
 .btn-primary.focus {
   color: #ff7815;
@@ -7871,6 +7876,10 @@ fieldset[disabled] .btn-primary.focus {
   font-family: 'Proxima Nova Semibold';
   font-size: 0.9em;
   z-index: 10;
+  /* &:hover{
+    background-color: transparent !important;
+    color: @btn-success-border !important;    
+  } */
   color: #fff;
   background-color: #398140;
   border-color: #316f37;
@@ -8734,6 +8743,39 @@ p:last-child,
 .control-group .help-inline:first-child {
   margin-top: 0;
 }
+@media (max-width: 768px) {
+  .footer {
+    margin-top: -249px;
+  }
+  .footer div.bloc2Footer {
+    margin-top: 70px;
+    padding-left: 0;
+    text-align: center;
+  }
+  .footer div.bloc2Footer p.fb,
+  .footer div.bloc2Footer p.insta,
+  .footer div.bloc2Footer p.twt {
+    background-position-x: 50%;
+    text-indent: 0;
+    background-size: 8px;
+    color: transparent;
+  }
+  .footer div.bloc3Footer {
+    margin-top: 100px;
+    padding-left: 0;
+    text-align: center;
+  }
+  .footer div.bloc4Footer {
+    margin-top: 100px;
+    padding-left: 0;
+    text-align: center;
+  }
+  .footer div.bloc4Footer div#mc_embed_signup {
+    background: transparent;
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+}
 /*
 
 	Specific style for homepage
@@ -8763,6 +8805,17 @@ p:last-child,
   font-family: 'Proxima Nova Light';
   src: url('../fonts/Proxima Nova Light.otf') format('opentype');
 }
+body.path-frontpage a.navbar-brand-second {
+  display: none;
+  background: url('../images/logo_futbak.png') no-repeat 50% 50% transparent;
+  background-size: 100%;
+  min-height: 70px;
+  min-width: 200px;
+  margin-left: 24px !important;
+  margin-top: 20px;
+  position: absolute;
+  top: 0;
+}
 body.path-frontpage header.navbar {
   transition: background-color 0.8s;
   -webkit-transition: background-color 0.8s;
@@ -8783,7 +8836,7 @@ body.path-frontpage header.navbar.reduce a.navbar-brand {
 }
 body.path-frontpage header.navbar.reduce ul {
   margin-top: 0;
-  padding-bottom: 12px;
+  padding-bottom: 30px;
 }
 body.path-frontpage div.main-container {
   overflow-x: hidden;
@@ -8818,7 +8871,7 @@ body.path-frontpage div.main-container div.fold1 div.blocFold1 p.slogan {
   letter-spacing: 10px;
   text-transform: uppercase;
   font-size: 3em;
-  max-width: 50%;
+  max-width: 48%;
   line-height: 75px;
 }
 body.path-frontpage div.main-container div.fold1 div.blocFold1 p.slogan span {
@@ -8832,7 +8885,7 @@ body.path-frontpage div.main-container div.fold1 div.blocFold1 p.postSlogan {
   font-family: 'Proxima Nova Thin';
   color: #fff;
   margin-top: 30px;
-  width: 45%;
+  max-width: 40%;
   font-size: 1.1em;
   text-shadow: 0px 0px 4px #000;
 }
@@ -8959,6 +9012,10 @@ body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div#mc_embed_sig
 body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div#mc_embed_signup div.clear input:focus {
   outline-color: #398140;
 }
+body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div#mc_embed_signup div.clear input:hover {
+  background-color: #398140;
+  color: #fff;
+}
 body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div#mc_embed_signup input.email {
   border: 0;
   padding: 15px 0;
@@ -9053,6 +9110,7 @@ body.path-frontpage div.main-container div.fold5 div.bloc1Fold5 p.title {
   color: #3b3b3b;
   font-size: 2.2em;
   text-transform: uppercase;
+  line-height: 1.6em;
 }
 body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 {
   height: 100%;
@@ -9199,6 +9257,15 @@ body.path-frontpage div.main-container div.fold6 button {
   }
 }
 @media (max-width: 1600px) {
+  body.path-frontpage div.main-container div.fold1 {
+    background: url('../images/background_fold1_1600.jpg') no-repeat 100% 0%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+  }
+  body.path-frontpage div.main-container div.fold1 div.blocFold1 p.postSlogan {
+    font-weight: bold;
+  }
   body.path-frontpage div.main-container div.fold2 div.bloc1Fold2 {
     background-position-y: 125px;
     padding-top: 510px;
@@ -9337,9 +9404,10 @@ body.path-frontpage div.main-container div.fold6 button {
   }
   body.path-frontpage div.main-container div.fold2 {
     background-position-x: 100%;
-    padding-bottom: 0px;
-    height: 2185px;
-    background-size: 373%;
+    padding-bottom: 400px;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
   }
   body.path-frontpage div.main-container div.fold2 div.bloc1Fold2,
   body.path-frontpage div.main-container div.fold2 div.bloc2Fold2,
@@ -9372,26 +9440,33 @@ body.path-frontpage div.main-container div.fold6 button {
   }
   body.path-frontpage div.main-container div.fold3 {
     background-color: transparent;
-    margin-top: -65px;
+    margin-top: -200px;
+    margin-left: -2%;
+    transform: rotate(0deg);
   }
   body.path-frontpage div.main-container div.fold3 div.bloc1Fold3 {
-    min-height: 400px;
+    min-height: 250px;
+    transform-origin: left center;
   }
   body.path-frontpage div.main-container div.fold3 div.bloc1Fold3::before {
+    background: url('../images/photo_fold3_join_1200.png') no-repeat 50% 0;
     background-size: 150%;
     width: 100%;
     left: 0;
-    top: -390px;
+    top: 0;
     background-position-x: 50%;
+    transform: rotate(0deg);
   }
   body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 {
-    padding-top: 150px;
-    padding-left: 29%;
-    width: 100%;
+    padding-top: 115px;
+    padding-left: 31%;
+  }
+  body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div.wrapperHorizontal {
+    transform: rotate(0deg);
   }
   body.path-frontpage div.main-container div.fold4 {
     margin-top: 110px;
-    padding-top: 190px;
+    padding-top: 135px;
     background: url('../images/background_fold4_1200.jpg') repeat-y 50% 0%;
   }
   body.path-frontpage div.main-container div.fold4 div.bloc1Fold4,
@@ -9401,15 +9476,164 @@ body.path-frontpage div.main-container div.fold6 button {
   }
 }
 @media (max-width: 992px) {
+  ul.navbar-nav li {
+    margin-right: 3%;
+  }
+  body.path-frontpage div.main-container div.fold1 div.blocFold1 p.postSlogan {
+    max-width: 55%;
+    font-size: 1.2em;
+    text-shadow: 0px 0px 4px #888;
+  }
   body.path-frontpage div.main-container div.fold2 div.bloc1Fold2 p.subTitle,
   body.path-frontpage div.main-container div.fold2 div.bloc2Fold2 p.subTitle,
   body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 p.subTitle {
     width: 30%;
   }
+  body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 {
+    padding-top: 115px;
+    padding-left: 29%;
+  }
+  body.path-frontpage div.main-container div.fold4 p.subTitle {
+    padding: 0 15% 60px;
+  }
   body.path-frontpage div.main-container div.fold4 div.bloc1Fold4,
   body.path-frontpage div.main-container div.fold4 div.bloc2Fold4,
   body.path-frontpage div.main-container div.fold4 div.bloc3Fold4 {
-    padding: 0% 38%;
+    padding: 0% 33%;
+  }
+  body.path-frontpage div.main-container div.fold4 div.bloc1Fold4 p.nomEquipe,
+  body.path-frontpage div.main-container div.fold4 div.bloc2Fold4 p.nomEquipe,
+  body.path-frontpage div.main-container div.fold4 div.bloc3Fold4 p.nomEquipe {
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 14px;
+    font-size: 1.5em;
+  }
+  body.path-frontpage div.main-container div.fold4 div.bloc1Fold4 p.decro,
+  body.path-frontpage div.main-container div.fold4 div.bloc2Fold4 p.decro,
+  body.path-frontpage div.main-container div.fold4 div.bloc3Fold4 p.decro {
+    text-align: justify;
+  }
+}
+@media (max-width: 768px) {
+  body.path-frontpage header.navbar {
+    /* background-color: rgba(0, 0, 0, 0.6); */
+  }
+  body.path-frontpage header.navbar button.navbar-toggle {
+    margin-top: 45px;
+    margin-bottom: 35px;
+  }
+  body.path-frontpage div.navbar-collapse {
+    border: 0;
+    box-shadow: none;
+  }
+  body.path-frontpage div.navbar-collapse ul.nav.navbar-nav {
+    margin-top: -25px;
+    padding-bottom: 15px;
+    /*
+    			li{
+    				width: 100%;
+    				a{
+    					padding-top: 0px;
+    				}
+    			}
+    			*/
+  }
+  body.path-frontpage a.name.navbar-brand {
+    display: none;
+  }
+  body.path-frontpage a.navbar-brand-second {
+    display: block;
+    z-index: 9999;
+    position: fixed;
+  }
+  body.path-frontpage div.main-container div.fold1 {
+    background-size: 166%;
+    background-position-x: 22%;
+  }
+  body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 {
+    padding-left: 22%;
+  }
+  body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div#mc_embed_signup div.mc-field-group {
+    width: 50%;
+    display: inline-block;
+  }
+  body.path-frontpage div.main-container div.fold4 div.bloc1Fold4,
+  body.path-frontpage div.main-container div.fold4 div.bloc2Fold4,
+  body.path-frontpage div.main-container div.fold4 div.bloc3Fold4 {
+    padding: 0% 28%;
+  }
+}
+@media (max-width: 700px) {
+  body.path-frontpage div.main-container div.fold1 {
+    background-size: 192%;
+    background-position-x: 25%;
+  }
+  body.path-frontpage div.main-container div.fold1 div.blocFold1 p.postSlogan {
+    max-width: 97%;
+  }
+  body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 {
+    padding-left: 13%;
+  }
+}
+@media (max-width: 600px) {
+  body.path-frontpage div.main-container div.fold1 {
+    background-size: 242%;
+    background-position-x: 48%;
+  }
+  body.path-frontpage div.main-container div.fold1 div.blocFold1 p.slogan {
+    font-size: 2.6em;
+  }
+  body.path-frontpage div.main-container div.fold4 div.bloc1Fold4,
+  body.path-frontpage div.main-container div.fold4 div.bloc2Fold4,
+  body.path-frontpage div.main-container div.fold4 div.bloc3Fold4 {
+    padding: 0% 5%;
+  }
+  body.path-frontpage div.main-container div.fold4 div.bloc1Fold4 div.photo,
+  body.path-frontpage div.main-container div.fold4 div.bloc2Fold4 div.photo,
+  body.path-frontpage div.main-container div.fold4 div.bloc3Fold4 div.photo {
+    width: 64%;
+    margin: 0 auto;
+  }
+  body.path-frontpage div.main-container div.fold4 div.bloc1Fold4 p.decro,
+  body.path-frontpage div.main-container div.fold4 div.bloc2Fold4 p.decro,
+  body.path-frontpage div.main-container div.fold4 div.bloc3Fold4 p.decro {
+    width: 62%;
+    margin: 0 auto;
+  }
+  body.path-frontpage div.main-container div.fold4 div.bloc1Fold4 div.social,
+  body.path-frontpage div.main-container div.fold4 div.bloc2Fold4 div.social,
+  body.path-frontpage div.main-container div.fold4 div.bloc3Fold4 div.social {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  body.path-frontpage div.main-container div.fold1 {
+    min-height: 1070px;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position-y: -40px;
+  }
+  body.path-frontpage div.main-container div.fold1 div.blocFold1 {
+    margin-top: 230px;
+  }
+  body.path-frontpage div.main-container div.fold4 div.bloc1Fold4,
+  body.path-frontpage div.main-container div.fold4 div.bloc2Fold4,
+  body.path-frontpage div.main-container div.fold4 div.bloc3Fold4 {
+    padding: 0% 5%;
+  }
+  body.path-frontpage div.main-container div.fold4 div.bloc1Fold4 div.photo,
+  body.path-frontpage div.main-container div.fold4 div.bloc2Fold4 div.photo,
+  body.path-frontpage div.main-container div.fold4 div.bloc3Fold4 div.photo {
+    width: 80%;
+    margin: 0 auto;
+  }
+  body.path-frontpage div.main-container div.fold4 div.bloc1Fold4 p.decro,
+  body.path-frontpage div.main-container div.fold4 div.bloc2Fold4 p.decro,
+  body.path-frontpage div.main-container div.fold4 div.bloc3Fold4 p.decro {
+    width: 76%;
   }
 }
 /*# sourceMappingURL=style.css.map */

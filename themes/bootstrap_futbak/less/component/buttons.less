@@ -83,6 +83,10 @@
     bottom: -5px;
     border: 1px solid @btn-primary-border;
   }
+  &:hover{
+    color: #fff !important;
+    background-color: @btn-primary-border !important;
+  }
   .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
 }
 // Success appears as green
@@ -105,6 +109,10 @@
     height: 104%;
     border: 1px solid @btn-success-border;
   }
+  /* &:hover{
+    background-color: transparent !important;
+    color: @btn-success-border !important;    
+  } */
   .button-variant(@btn-success-color; @btn-success-bg; @btn-success-border);
 }
 // Info appears as blue-green

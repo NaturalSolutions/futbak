@@ -39,6 +39,7 @@ ol, ul {
   margin-top: 10px;
 }
 
+
 // Footer.
 .footer {
   background: url('../images/background_footer.png') no-repeat 50% 0;  
@@ -159,5 +160,40 @@ p:last-child,
   padding: 0;
   &:first-child {
     margin-top: 0;
+  }
+}
+
+// En dessous de 768px
+@media (max-width : @screen-tablet) {
+  .footer {
+    margin-top: -249px;
+    div.bloc2Footer {
+        margin-top: 70px;
+        padding-left: 0;
+        text-align: center;
+        p.fb,
+        p.insta,
+        p.twt {
+          background-position-x: 50%; 
+          text-indent: 0;      
+          background-size: 8px;
+          color: transparent;
+        }
+    }
+    div.bloc3Footer {
+      margin-top: 100px;
+      padding-left: 0;
+      text-align: center;
+    }
+    div.bloc4Footer {
+      margin-top: 100px;
+      padding-left: 0;
+      text-align: center;
+      div#mc_embed_signup {
+          background: transparent;
+          margin-top: 20px;
+          margin-left: 20%;
+      }
+    }
   }
 }
