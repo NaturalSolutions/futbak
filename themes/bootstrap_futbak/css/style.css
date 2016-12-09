@@ -8781,6 +8781,20 @@ p:last-child,
   .footer {
     margin-top: -385px;
   }
+  .footer div.bloc4Footer div#mc_embed_signup {
+    margin-left: 12%;
+  }
+  .footer div.bloc4Footer div#mc_embed_signup div.mc-field-group {
+    width: 88%;
+  }
+  .footer div.bloc4Footer div#mc_embed_signup div.clear {
+    top: 8px;
+    left: -3px;
+    width: 100%;
+  }
+  .footer div.bloc4Footer div#mc_embed_signup div.clear input {
+    width: 87%;
+  }
 }
 /*
 
