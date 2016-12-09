@@ -42,7 +42,7 @@ ol, ul {
 
 // Footer.
 .footer {
-  background: url('../images/background_footer.png') no-repeat 50% 0;  
+  background: url('../images/background_footer.png') no-repeat 100% 0;  
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -166,7 +166,8 @@ p:last-child,
 // En dessous de 768px
 @media (max-width : @screen-tablet) {
   .footer {
-    margin-top: -249px;
+    margin-top: -326px;
+    background-position-x: 56%;
     div.bloc2Footer {
         margin-top: 70px;
         padding-left: 0;
@@ -195,5 +196,13 @@ p:last-child,
           margin-left: 20%;
       }
     }
+  }
+}
+
+// En dessous de 480px
+@media (max-width : @screen-phone) { 
+
+  .footer{
+    margin-top: -385px;
   }
 }

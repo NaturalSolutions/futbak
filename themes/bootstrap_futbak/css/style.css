@@ -8629,7 +8629,7 @@ ul {
   margin-top: 10px;
 }
 .footer {
-  background: url('../images/background_footer.png') no-repeat 50% 0;
+  background: url('../images/background_footer.png') no-repeat 100% 0;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -8745,7 +8745,8 @@ p:last-child,
 }
 @media (max-width: 768px) {
   .footer {
-    margin-top: -249px;
+    margin-top: -326px;
+    background-position-x: 56%;
   }
   .footer div.bloc2Footer {
     margin-top: 70px;
@@ -8774,6 +8775,11 @@ p:last-child,
     background: transparent;
     margin-top: 20px;
     margin-left: 20%;
+  }
+}
+@media (max-width: 480px) {
+  .footer {
+    margin-top: -385px;
   }
 }
 /*
@@ -8984,6 +8990,7 @@ body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 p.title {
   text-indent: 0;
   margin-bottom: 45px;
   text-transform: uppercase;
+  line-height: 2em;
 }
 body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div#mc_embed_signup {
   background: transparent;
@@ -9180,7 +9187,7 @@ body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.swiper-conta
   height: 100px;
 }
 body.path-frontpage div.main-container div.fold6 {
-  background: url('../images/background_fold6.png') no-repeat 50% 0%;
+  background: url('../images/background_fold6.png') no-repeat 100% 0%;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -9514,6 +9521,9 @@ body.path-frontpage div.main-container div.fold6 button {
   body.path-frontpage div.main-container div.fold4 div.bloc3Fold4 p.decro {
     text-align: justify;
   }
+  body.path-frontpage div.main-container div.fold6 {
+    min-height: 875px;
+  }
 }
 @media (max-width: 768px) {
   body.path-frontpage header.navbar {
@@ -9562,6 +9572,12 @@ body.path-frontpage div.main-container div.fold6 button {
   body.path-frontpage div.main-container div.fold4 div.bloc2Fold4,
   body.path-frontpage div.main-container div.fold4 div.bloc3Fold4 {
     padding: 0% 28%;
+  }
+  body.path-frontpage div.main-container div.fold6 {
+    min-height: 1000px;
+  }
+  body.path-frontpage div.main-container div.fold6 p.txt {
+    padding: 0 5%;
   }
 }
 @media (max-width: 700px) {
@@ -9619,6 +9635,22 @@ body.path-frontpage div.main-container div.fold6 button {
   body.path-frontpage div.main-container div.fold1 div.blocFold1 {
     margin-top: 230px;
   }
+  body.path-frontpage div.main-container div.fold1 div.blocFold1 p.slogan {
+    font-size: 1.8em;
+    line-height: 2em;
+  }
+  body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div#mc_embed_signup div.mc-field-group {
+    width: 91%;
+  }
+  body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div#mc_embed_signup div.clear {
+    top: 25px;
+    left: 23%;
+  }
+  body.path-frontpage div.main-container div.fold2 div.bloc1Fold2 p.subTitle,
+  body.path-frontpage div.main-container div.fold2 div.bloc2Fold2 p.subTitle,
+  body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 p.subTitle {
+    width: 65%;
+  }
   body.path-frontpage div.main-container div.fold4 div.bloc1Fold4,
   body.path-frontpage div.main-container div.fold4 div.bloc2Fold4,
   body.path-frontpage div.main-container div.fold4 div.bloc3Fold4 {
@@ -9634,6 +9666,12 @@ body.path-frontpage div.main-container div.fold6 button {
   body.path-frontpage div.main-container div.fold4 div.bloc2Fold4 p.decro,
   body.path-frontpage div.main-container div.fold4 div.bloc3Fold4 p.decro {
     width: 76%;
+  }
+  body.path-frontpage div.main-container div.fold6 {
+    min-height: 1200px;
+  }
+  body.path-frontpage div.main-container div.fold6 p.title {
+    font-size: 2.5em;
   }
 }
 /*# sourceMappingURL=style.css.map */

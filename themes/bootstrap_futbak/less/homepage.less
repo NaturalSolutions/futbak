@@ -200,6 +200,7 @@ body.path-frontpage{
 					    text-indent: 0;
 					    margin-bottom: 45px;
 					    text-transform: uppercase;
+					    line-height: 2em;
 				    }
 				}
 				/* Form Mailchimp */
@@ -406,7 +407,7 @@ body.path-frontpage{
 		}
 
 		div.fold6{
-			background: url('../images/background_fold6.png') no-repeat 50% 0%;
+			background: url('../images/background_fold6.png') no-repeat 100% 0%;
 			background-size: cover;
 			-moz-background-size: cover;
 			-webkit-background-size: cover;
@@ -783,6 +784,9 @@ body.path-frontpage{
 				}
 			}
 		}
+		div.fold6 {
+			min-height: 875px;			
+		}
 	}
 }
 
@@ -840,6 +844,12 @@ body.path-frontpage{
 				div.bloc2Fold4, 
 				div.bloc3Fold4 {
 	    			padding: 0% 28%;
+				}
+			}
+			div.fold6{
+				min-height: 1000px;
+				p.txt {				
+				    padding: 0 5%;
 				}
 			}
 		}
@@ -905,6 +915,30 @@ body.path-frontpage{
     		background-position-y: -40px;
 			div.blocFold1 {
 		    	margin-top: 230px;	
+		    	p.slogan {
+				    font-size: 1.8em;
+				    line-height: 2em;
+				}
+			}
+		}
+		div.fold3 {
+			div.bloc2Fold3 div#mc_embed_signup{
+				div.mc-field-group {
+		    		width: 91%;
+				}
+				div.clear {
+				    top: 25px;
+				    left: 23%;
+				}
+			} 
+		}
+		div.fold2 {
+			div.bloc1Fold2,
+			div.bloc2Fold2,
+			div.bloc3Fold2{
+				p.subTitle {
+					width: 65%;
+				}				
 			}
 		}
 		div.fold4 {
@@ -920,6 +954,12 @@ body.path-frontpage{
     				width: 76%;
     			}
     		}
+		}
+		div.fold6{
+			min-height: 1200px;
+			p.title{
+				font-size: 2.5em;
+			}
 		}	
 	}
 }
