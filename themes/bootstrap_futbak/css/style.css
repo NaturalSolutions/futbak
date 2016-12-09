@@ -8706,15 +8706,24 @@ ul {
   background: url('../images/icon_fb_footer.png') no-repeat 0% 50%;
   background-size: 7px;
 }
+.footer p.fb a {
+  color: #4e4e4e;
+}
 .footer p.insta {
   text-indent: 20px;
   background: url('../images/icon_insta_footer.png') no-repeat 0% 50%;
   background-size: 10px;
 }
+.footer p.insta a {
+  color: #4e4e4e;
+}
 .footer p.twt {
   text-indent: 20px;
   background: url('../images/icon_twt_footer.png') no-repeat 0% 50%;
   background-size: 11px;
+}
+.footer p.twt a {
+  color: #4e4e4e;
 }
 .footer div.labelPosition p {
   font-family: 'Proxima Nova';
@@ -8743,7 +8752,7 @@ p:last-child,
 .control-group .help-inline:first-child {
   margin-top: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer {
     margin-top: -326px;
     background-position-x: 56%;
@@ -8759,6 +8768,11 @@ p:last-child,
     background-position-x: 50%;
     text-indent: 0;
     background-size: 8px;
+    color: transparent;
+  }
+  .footer div.bloc2Footer p.fb a,
+  .footer div.bloc2Footer p.insta a,
+  .footer div.bloc2Footer p.twt a {
     color: transparent;
   }
   .footer div.bloc3Footer {
