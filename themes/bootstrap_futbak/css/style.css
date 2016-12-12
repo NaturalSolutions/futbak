@@ -8962,6 +8962,7 @@ body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 p.subTitle {
   width: 40%;
   margin: 0 auto;
   margin-top: 15px;
+  font-weight: bold;
 }
 body.path-frontpage div.main-container div.fold3 {
   transform-origin: left center;
@@ -9458,6 +9459,7 @@ body.path-frontpage div.main-container div.fold6 button {
   body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 p.subTitle {
     width: 20%;
     text-align: justify;
+    font-size: 1.1em;
   }
   body.path-frontpage div.main-container div.fold2 div.bloc1Fold2.bloc2Fold2,
   body.path-frontpage div.main-container div.fold2 div.bloc2Fold2.bloc2Fold2,
@@ -9484,8 +9486,8 @@ body.path-frontpage div.main-container div.fold6 button {
     transform-origin: left center;
   }
   body.path-frontpage div.main-container div.fold3 div.bloc1Fold3::before {
-    background: url('../images/photo_fold3_join_1200.png') no-repeat 50% 0;
-    background-size: 150%;
+    background: url('../images/photo_fold3_join_1200.jpg') no-repeat 50% 0;
+    background-size: 100%;
     width: 100%;
     left: 0;
     top: 0;
@@ -9500,7 +9502,7 @@ body.path-frontpage div.main-container div.fold6 button {
     transform: rotate(0deg);
   }
   body.path-frontpage div.main-container div.fold4 {
-    margin-top: 110px;
+    margin-top: 70px;
     padding-top: 135px;
     background: url('../images/background_fold4_1200.jpg') repeat-y 50% 0%;
   }
@@ -9523,6 +9525,9 @@ body.path-frontpage div.main-container div.fold6 button {
   body.path-frontpage div.main-container div.fold2 div.bloc2Fold2 p.subTitle,
   body.path-frontpage div.main-container div.fold2 div.bloc3Fold2 p.subTitle {
     width: 30%;
+  }
+  body.path-frontpage div.main-container div.fold3 {
+    margin-top: -270px;
   }
   body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 {
     padding-top: 115px;
@@ -9590,6 +9595,7 @@ body.path-frontpage div.main-container div.fold6 button {
     background-position-x: 22%;
   }
   body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 {
+    padding-top: 25px;
     padding-left: 22%;
   }
   body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 div#mc_embed_signup div.mc-field-group {
@@ -9605,7 +9611,13 @@ body.path-frontpage div.main-container div.fold6 button {
     min-height: 1000px;
   }
   body.path-frontpage div.main-container div.fold6 p.txt {
-    padding: 0 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 70px #000;
+    padding: 5px 5%;
+    margin-left: -3%;
+    font-size: 1.2em;
+    text-shadow: 0px 0px 4px #888;
+    font-weight: bold;
   }
 }
 @media (max-width: 700px) {
@@ -9615,6 +9627,13 @@ body.path-frontpage div.main-container div.fold6 button {
   }
   body.path-frontpage div.main-container div.fold1 div.blocFold1 p.postSlogan {
     max-width: 97%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 70px #000;
+    padding: 5px 3%;
+    margin-left: -3%;
+  }
+  body.path-frontpage div.main-container div.fold3 {
+    margin-top: -290px;
   }
   body.path-frontpage div.main-container div.fold3 div.bloc2Fold3 {
     padding-left: 13%;
@@ -9627,6 +9646,9 @@ body.path-frontpage div.main-container div.fold6 button {
   }
   body.path-frontpage div.main-container div.fold1 div.blocFold1 p.slogan {
     font-size: 2.6em;
+  }
+  body.path-frontpage div.main-container div.fold3 div.bloc1Fold3 {
+    min-height: 195px;
   }
   body.path-frontpage div.main-container div.fold4 div.bloc1Fold4,
   body.path-frontpage div.main-container div.fold4 div.bloc2Fold4,

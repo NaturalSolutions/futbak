@@ -146,6 +146,7 @@ body.path-frontpage{
 					width: 40%;
 					margin: 0 auto;
 					margin-top: 15px;
+					font-weight: bold;
 				}
     		}
 		}
@@ -678,6 +679,7 @@ body.path-frontpage{
 			    p.subTitle{
 			    	width: 20%;
 		    		text-align: justify;
+		    		font-size: 1.1em;
 			    }
 			    &.bloc2Fold2{
 			    	background-position-x: 50%;
@@ -700,9 +702,9 @@ body.path-frontpage{
 				min-height: 250px;
 				transform-origin: left center;
 				&::before{
-					background: url('../images/photo_fold3_join_1200.png') no-repeat 50% 0;
-					background-size: 150%;
-					width: 100%;
+					background: url('../images/photo_fold3_join_1200.jpg') no-repeat 50% 0;
+					background-size: 100%;
+    				width: 100%;
 					left: 0;
     				top: 0;
 					background-position-x: 50%;
@@ -718,7 +720,7 @@ body.path-frontpage{
 			}
 		}
 		div.fold4 {
-		    margin-top: 110px;
+		    margin-top: 70px;
 		    padding-top: 135px;
 		    background: url('../images/background_fold4_1200.jpg') repeat-y 50% 0%;
 			div.bloc1Fold4, 
@@ -758,6 +760,7 @@ body.path-frontpage{
 			}
 		}
 		div.fold3 {
+			margin-top: -270px;
 			div.bloc2Fold3 {
 			    padding-top: 115px;
 			    padding-left: 29%;
@@ -831,7 +834,8 @@ body.path-frontpage{
 				background-position-x: 22%;	
 			}
 			div.fold3 {
-				div.bloc2Fold3 {			
+				div.bloc2Fold3 {
+					padding-top: 25px;
 			    	padding-left: 22%;
 					div#mc_embed_signup div.mc-field-group {
 					    width: 50%;
@@ -849,7 +853,13 @@ body.path-frontpage{
 			div.fold6{
 				min-height: 1000px;
 				p.txt {				
-				    padding: 0 5%;
+				    background-color: rgba(0, 0, 0, 0.5);
+				    box-shadow: 0px 0px 70px #000;
+				    padding: 5px 5%;
+				    margin-left: -3%;
+				    font-size: 1.2em;
+				    text-shadow: 0px 0px 4px #888;
+				    font-weight: bold;
 				}
 			}
 		}
@@ -864,10 +874,18 @@ body.path-frontpage{
     		background-position-x: 25%;
     		div.blocFold1 p.postSlogan {
     			max-width: 97%;
+			    background-color: rgba(0,0,0,0.5);
+			    box-shadow: 0px 0px 70px #000;
+			    padding: 5px 3%;
+			    margin-left: -3%;
+
 			}
 		}
-		div.fold3 div.bloc2Fold3 {
-		    padding-left: 13%;
+		div.fold3 {
+			margin-top: -290px;
+			div.bloc2Fold3 {
+		    	padding-left: 13%;
+			}
 		}
 	}
 }
@@ -880,6 +898,11 @@ body.path-frontpage{
 		    background-position-x: 48%;
 		    div.blocFold1 p.slogan {			
 		    	font-size: 2.6em;			    
+			}
+		}
+		div.fold3{
+			div.bloc1Fold3{
+				min-height: 195px;
 			}
 		}
 		div.fold4 {
