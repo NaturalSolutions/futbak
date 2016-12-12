@@ -27,9 +27,44 @@ jQuery( document ).ready(function() {
 		var mySwiper = new Swiper ('.fold5 .swiper-container', {
 			
 			slidesPerView: 7,
-	        spaceBetween : 100,	        
-	        autoplay : 2500,
-	        loop: true
+			loopedSlides : 7,
+	        autoplayDisableOnInteraction : false,
+	        autoplay : 2500,	        
+	        loop: true,
+	        spaceBetween: 120,
+			// Responsive breakpoints
+			breakpoints: {
+				// when window width is <= 320px
+				320: {
+				  slidesPerView: 1,
+				  spaceBetween: 10
+				},
+				// when window width is <= 480px
+				480: {
+				  slidesPerView: 2,
+				  spaceBetween: 15
+				},
+				// when window width is <= 640px
+				640: {
+				  slidesPerView: 3,
+				  spaceBetween: 25
+				},
+				// when window width is <= 768px
+				768: {
+				  slidesPerView: 4,
+				  spaceBetween: 25
+				},
+				// when window width is <= 992px
+				992: {
+				  slidesPerView: 5,
+				  spaceBetween: 25
+				},
+				// when window width is <= 992px
+				1200: {
+				  slidesPerView: 6,
+				  spaceBetween: 90
+				}
+			}
 
 		})
 
