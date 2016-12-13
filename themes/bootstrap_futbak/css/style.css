@@ -9190,7 +9190,6 @@ body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 {
 				} */
 }
 body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.swiper-container {
-  cursor: move;
   width: 100%;
   margin-top: 100px;
 }
@@ -9214,6 +9213,9 @@ body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.swiper-conta
 body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.swiper-container div.swiper-slide.cnrs img,
 body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.swiper-container div.swiper-slide.etienne img {
   height: 100px;
+}
+body.path-frontpage div.main-container div.fold5 div.bloc2Fold5 div.swiper-container div.swiper-slide a {
+  display: block;
 }
 body.path-frontpage div.main-container div.fold6 {
   background: url('../images/background_fold6.png') no-repeat 100% 0%;

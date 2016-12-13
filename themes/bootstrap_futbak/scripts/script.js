@@ -27,7 +27,12 @@ jQuery( document ).ready(function() {
 		var mySwiper = new Swiper ('.fold5 .swiper-container', {
 			
 			slidesPerView: 7,
-			loopedSlides : 7,
+			/*loopedSlides : 11,*/
+			/*preventClicks : false,		
+			preventClicksPropagation : true,	
+			slideToClickedSlide : true,*/
+			/*onlyExternal : true,*/
+			simulateTouch : false,
 	        autoplayDisableOnInteraction : false,
 	        autoplay : 2500,	        
 	        loop: true,
