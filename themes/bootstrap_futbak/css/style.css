@@ -7269,11 +7269,13 @@ body .nav {
   min-width: 88%;
   margin-top: 25px;
   margin-right: 0;
+  text-align: right;
 }
 body .nav > li {
-  text-align: center;
+  text-align: right;
   margin-right: 5%;
-  float: right;
+  float: none;
+  display: inline-block;
 }
 body .nav > li > a {
   font-family: 'Proxima Nova';
@@ -9562,7 +9564,7 @@ body.path-frontpage div.main-container div.fold6 button {
 }
 @media (max-width: 768px) {
   body.path-frontpage header.navbar {
-    /* background-color: rgba(0, 0, 0, 0.6); */
+    background-color: rgba(0, 0, 0, 0.6);
   }
   body.path-frontpage header.navbar button.navbar-toggle {
     margin-top: 45px;
@@ -9575,14 +9577,15 @@ body.path-frontpage div.main-container div.fold6 button {
   body.path-frontpage div.navbar-collapse ul.nav.navbar-nav {
     margin-top: -25px;
     padding-bottom: 15px;
-    /*
-    			li{
-    				width: 100%;
-    				a{
-    					padding-top: 0px;
-    				}
-    			}
-    			*/
+    overflow: hidden;
+  }
+  body.path-frontpage div.navbar-collapse ul.nav.navbar-nav li {
+    width: 100%;
+    text-align: right;
+    padding-left: 8%;
+  }
+  body.path-frontpage div.navbar-collapse ul.nav.navbar-nav li a {
+    /* padding-top: 0px; */
   }
   body.path-frontpage a.name.navbar-brand {
     display: none;
