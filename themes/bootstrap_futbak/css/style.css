@@ -8754,6 +8754,17 @@ p:last-child,
 .control-group .help-inline:first-child {
   margin-top: 0;
 }
+@media (max-width: 991px) {
+  .footer div.bloc4Footer div#mc_embed_signup div.mc-field-group,
+  .footer div.bloc4Footer div#mc_embed_signup div.clear {
+    width: 90%;
+  }
+  .footer div.bloc4Footer div#mc_embed_signup div.clear input {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 7px;
+  }
+}
 @media (max-width: 767px) {
   .footer {
     margin-top: -326px;
@@ -8764,52 +8775,69 @@ p:last-child,
     padding-left: 0;
     text-align: center;
   }
+  .footer div.bloc2Footer p.fb {
+    background: url("../images/icon_fb_footer_big.png") no-repeat 50% 50%;
+    background-size: 40px;
+    height: 50px;
+  }
+  .footer div.bloc2Footer p.insta {
+    background: url("../images/icon_insta_footer_big.png") no-repeat 50% 50%;
+    background-size: 40px;
+    height: 50px;
+  }
+  .footer div.bloc2Footer p.twt {
+    background: url("../images/icon_twt_footer_big.png") no-repeat 50% 50%;
+    background-size: 40px;
+    height: 50px;
+  }
   .footer div.bloc2Footer p.fb,
   .footer div.bloc2Footer p.insta,
   .footer div.bloc2Footer p.twt {
-    background-position-x: 50%;
     text-indent: 0;
-    background-size: 8px;
     color: transparent;
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 20px;
   }
   .footer div.bloc2Footer p.fb a,
   .footer div.bloc2Footer p.insta a,
   .footer div.bloc2Footer p.twt a {
     color: transparent;
+    height: 100%;
+    width: 50px;
+    display: block;
+    margin: 0 auto;
   }
   .footer div.bloc3Footer {
-    margin-top: 100px;
+    margin-top: 70px;
     padding-left: 0;
     text-align: center;
   }
   .footer div.bloc4Footer {
-    margin-top: 100px;
+    margin-top: 70px;
     padding-left: 0;
     text-align: center;
   }
-  .footer div.bloc4Footer div#mc_embed_signup {
-    background: transparent;
-    margin-top: 20px;
-    margin-left: 20%;
+  .footer div.bloc4Footer div#mc_embed_signup div.mc-field-group,
+  .footer div.bloc4Footer div#mc_embed_signup div.clear {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+  .footer div.bloc4Footer div#mc_embed_signup div.clear input {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 7px;
   }
 }
 @media (max-width: 480px) {
   .footer {
     margin-top: -385px;
   }
-  .footer div.bloc4Footer div#mc_embed_signup {
-    margin-left: 12%;
-  }
-  .footer div.bloc4Footer div#mc_embed_signup div.mc-field-group {
-    width: 88%;
-  }
+  .footer div.bloc4Footer div#mc_embed_signup div.mc-field-group,
   .footer div.bloc4Footer div#mc_embed_signup div.clear {
-    top: 8px;
-    left: -3px;
-    width: 100%;
-  }
-  .footer div.bloc4Footer div#mc_embed_signup div.clear input {
-    width: 87%;
+    width: 75%;
   }
 }
 /*
@@ -9516,7 +9544,7 @@ body.path-frontpage div.main-container div.fold6 button {
     margin-bottom: 85px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   ul.navbar-nav li {
     margin-right: 3%;
   }

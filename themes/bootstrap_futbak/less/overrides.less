@@ -172,6 +172,20 @@ p:last-child,
   }
 }
 
+// En dessous de 991px 
+@media (max-width : 991px) {  
+  .footer div.bloc4Footer div#mc_embed_signup {
+    div.mc-field-group, div.clear {
+      width: 90%;     
+    }
+    div.clear input{
+      width: 100%;
+      margin-left: 0;
+      margin-top: 7px;
+    }
+  }
+}
+
 // En dessous de 768px
 @media (max-width : 767px) {
   .footer {
@@ -181,54 +195,75 @@ p:last-child,
         margin-top: 70px;
         padding-left: 0;
         text-align: center;
+        p.fb{
+            background: url("../images/icon_fb_footer_big.png") no-repeat 50% 50%;
+            background-size: 40px;
+            height: 50px;
+        }
+        p.insta{
+            background: url("../images/icon_insta_footer_big.png") no-repeat 50% 50%;
+            background-size: 40px;
+            height: 50px;
+        }
+        p.twt{
+            background: url("../images/icon_twt_footer_big.png") no-repeat 50% 50%;
+            background-size: 40px;
+            height: 50px;
+        }
         p.fb,
         p.insta,
-        p.twt {
-          background-position-x: 50%; 
-          text-indent: 0;      
-          background-size: 8px;
-          color: transparent;
+        p.twt {          
+        text-indent: 0;
+        color: transparent;
+        display: inline-block;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 20px;
           a{
             color: transparent;
+            height: 100%;
+            width: 50px;
+            display: block;
+            margin: 0 auto;
           }
         }
     }
     div.bloc3Footer {
-      margin-top: 100px;
+      margin-top: 70px;
       padding-left: 0;
       text-align: center;
     }
     div.bloc4Footer {
-      margin-top: 100px;
+      margin-top: 70px;
       padding-left: 0;
       text-align: center;
       div#mc_embed_signup {
-          background: transparent;
-          margin-top: 20px;
-          margin-left: 20%;
+        div.mc-field-group, div.clear {
+            width: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+        div.clear input{
+          width: 100%;
+          margin-left: 0;
+          margin-top: 7px;
+        }
       }
     }
   }
 }
 
+
 // En dessous de 480px
 @media (max-width : @screen-phone) { 
 
-  .footer{
-    margin-top: -385px;
-    div.bloc4Footer div#mc_embed_signup{
-      margin-left: 12%;
-      div.mc-field-group {
-          width: 88%;
-      }
-      div.clear { 
-        top: 8px;
-        left: -3px;
-        width: 100%;
-        input{
-          width: 87%;
+    .footer{
+        margin-top: -385px;
+        div.bloc4Footer div#mc_embed_signup{
+            div.mc-field-group, div.clear {
+            width: 75%;
+            }      
         }
-      }
     }
-  }
+
 }
