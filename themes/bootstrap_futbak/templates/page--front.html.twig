@@ -104,24 +104,23 @@
     
 
       {# Content #}      
-      <div class="row fold1" id="home">
+      <div class="row fold1 {{ node.field_lang.value}}  " id="home">
         <div class="col-lg-12 blocFold1">
 
           <p class="preSlogan">
-            Lancement : été 2017
+            {{ node.field_fold1preslogan.value }}
           </p>
 
           <p class="slogan">
-            SURPASSEZ <!-- <span class='virgule'>,</span> --> <span>VOUS</span>
+             {{ node.field_fold1slogan.value|raw}}  
           </p>
 
           <p class="postSlogan">
-            Qui est le meilleur buteur, le meilleur défenseur ou tout simplement le meilleur joueur du match ? Technologie innovante destinée aux passionnés de foot indoor, FutBak t’offre enfin la possibilité de retrouver l’intégralité de tes performances et de refaire le match… statistiques à l’appui !
+           {{ node.field_fold1postslogan.value }}  
           </p>
 
           <button class="btn btn-primary ancre" type="button" href="#join">
-            Découvrir
-          </button>
+            {{ node.field_fold1button.value }}  
       
         </div> 
       </div>
@@ -129,26 +128,26 @@
       <div class="row fold2" id="concept">        
         <div class="col-lg-4 bloc1Fold2">
           <p class="title">
-            JOUE AU FOOT
+            {{ node.field_fold2bloc1title.value }}  
           </p>
           <p class="subTitle">
-            Découvre enfin ta valeur sur le terrain et ton influence réelle sur le résultat du match avec FutBak, un <strong>nouveau</strong> concept dédié au foot en salle.            
+            {{ node.field_fold2bloc1subtitle.value|raw}}              
           </p>
         </div>
         <div class="col-lg-4 bloc2Fold2">
           <p class="title">
-            COMPARE TOI
+             {{ node.field_fold2bloc2title.value }}
           </p>
           <p class="subTitle">
-            <strong>Evalue tes performances</strong> et mesure-les avec celles des autres joueurs grâce à un système de notation moderne et innovant !             
+            {{ node.field_fold2bloc2subtitle.value|raw}}         
           </p>
         </div>
         <div class="col-lg-4 bloc3Fold2">
           <p class="title">
-            AMELIORE TOI
+            {{ node.field_fold2bloc3title.value }}
           </p>
           <p class="subTitle">            
-            FutBak met à la portée des joueurs amateurs les <strong>statistiques</strong> physiques ou techniques jusqu’ici réservées aux pros : possession de balle, duels, passes, tirs…             
+             {{ node.field_fold2bloc3subtitle.value|raw}}   
           </p>
         </div>
       </div>
@@ -161,11 +160,11 @@
         <div class="col-lg-6 bloc2Fold3">
           <div class="wrapperHorizontal">
 
-            <p class="title">Rejoins-nous</p>
-            <p class="phrase">Découvre en <strong>avant-première</strong> le lancement de FutBak</p>
-            <p class="phrase">Reste informé de l’avancée du projet et <strong>deviens béta-testeur</strong></p>
-            <p class="phrase"><strong>Contribue à l’amélioration</strong> de FutBak et de tes performances</p>
-            <p class="phrase">Rejoins <strong>le club restreint</strong> des joueurs Futbak !</p>
+            <p class="title">{{ node.field_fold3title.value }}</p>
+            <p class="phrase">{{ node.field_fold3phrase1.value }}</p>
+            <p class="phrase">{{ node.field_fold3phrase2.value }}</p>
+            <p class="phrase">{{ node.field_fold3phrase3.value }}</p>
+            <p class="phrase">{{ node.field_fold3phrase4.value }}</p>
 
 
             <!-- Begin MailChimp Signup Form -->
@@ -176,7 +175,7 @@
             We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
             </style>
             <div id="mc_embed_signup">
-            <form action="//sportbak.us14.list-manage.com/subscribe/post?u=d06f129083eff828a4b472733&amp;id=958d70e3da" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <form action="//sportbak.us14.list-manage.com/subscribe/post?u=d06f129083eff828a4b472733&amp;id={{ node.field_mailchimpid.value }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
 
             <div class="mc-field-group">            
@@ -187,7 +186,7 @@
             <div class="response" id="mce-success-response" style="display:none"></div>
             </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d06f129083eff828a4b472733_958d70e3da" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Envoyer" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            <div class="clear"><input type="submit" value="{{ node.field_fold3button.value }}" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
             </div>
             </form>
             </div>
@@ -200,16 +199,16 @@
 
       <div class="row fold4" id="team">        
         <div class="col-lg-12">          
-          <p class="title">L’EQUIPE</p>
-          <p class="subTitle">Amis d’enfance, les fondateurs de Futbak se sont rencontrés sur les bancs de l’école maternelle. La passion commune du football leur a donné l’idée de s’associer, pour développer le concept FutBak.</p>
+          <p class="title">{{ node.field_fold4title.value }}</p>
+          <p class="subTitle">{{ node.field_fold4subtitle.value }}</p>
         </div>
         <div class="col-lg-12">          
           <div class="row">          
             <div class="col-md-4 bloc1Fold4">
               <div class="photo">              
               </div>
-              <p class="nomEquipe">GABRIEL COHEN</p>
-              <p class="decro">Ingénieur développeur-produit et joueur de football depuis son enfance, il est le meneur de jeu de l’équipe. Créateur du concept FutBak, il est en charge de sa réalisation.</p>
+              <p class="nomEquipe">{{ node.field_fold4bloc1nom.value }}</p>
+              <p class="decro">{{ node.field_fold4bloc1desc.value }}</p>
               <div class="social">
                 <a target='_blank' href="https://fr.linkedin.com/in/gabriel-cohen-9a056a117"><span class="iconLinkedin"></span></a>
                 <a href="mailto:gcohen@sportbak.com"><span class="iconMail"></span></a>
@@ -218,8 +217,8 @@
             <div class="col-md-4 bloc2Fold4">
               <div class="photo">              
               </div>
-              <p class="nomEquipe">BENJAMIN SIMEONI</p>
-              <p class="decro">Ingénieur statisticien et buteur de la Team FutBak, il est à l’origine des algorithmes et supervise le développement stratégique et commercial du produit.</p>
+              <p class="nomEquipe">{{ node.field_fold4bloc2nom.value }}</p>
+              <p class="decro">{{ node.field_fold4bloc2desc.value }}</p>
               <div class="social">
                 <a target='_blank' href="https://www.linkedin.com/in/benjamin-simeoni-27aa8354"><span class="iconLinkedin"></span></a>
                 <a href="mailto:bsimeoni@sportbak.com"><span class="iconMail"></span></a>              
@@ -228,8 +227,8 @@
             <div class="col-md-4 bloc3Fold4">
               <div class="photo">              
               </div>
-              <p class="nomEquipe">ALI OBEID</p>
-              <p class="decro">Docteur en micro-électronique, ses différentes expériences professionnelles l’ont amené à pratiquer le foot aux 4 coins du monde. Il supervise la conception des capteurs et du système de transmission des données recueillies avant leur analyse.</p>
+              <p class="nomEquipe">{{ node.field_fold4bloc3nom.value }}</p>
+              <p class="decro">{{ node.field_fold4bloc3desc.value }}</p>
               <div class="social">
                 <a target='_blank' href="https://fr.linkedin.com/in/ali-obeid-b2004124"><span class="iconLinkedin"></span></a>
                 <a href="mailto:aobeid@sportbak.com"><span class="iconMail"></span></a>
@@ -241,7 +240,7 @@
 
       <div class="row fold5">
         <div class="col-lg-12 bloc1Fold5">
-          <p class='title'>NOS PARTENAIRES</p>
+          <p class='title'>{{ node.field_fold5title.value }}</p>
         </div>
         <div class="col-lg-12 bloc2Fold5">
           <div class="row">
@@ -278,12 +277,12 @@
 
       <div class="row fold6" id="manager">
         <div class="col-lg-12">
-          <p class="title">VOUS ETES GERANT DE SALLE</p>
+          <p class="title">{{ node.field_fold6title.value }}</p>
           <p class="txt">
-            <strong>Démarquez-vous</strong> de vos concurrents, recrutez de nouveaux joueurs et augmentez le taux de location de vos salles ! <strong>Concept innovant</strong> spécialement conçu pour les complexes de foot indoor, FutBak vous permet de prendre un avantage technologique décisif, dans un environnement désormais fortement concurrentiel, <strong>en fidélisant vos clients sur le long terme</strong>.
+            {{ node.field_fold6txt.value|raw}}   
           </p>
           <button class="btn btn-success" type="button" onclick="window.open('http://eepurl.com/cr8kcj','_blank')">
-            EN SAVOIR PLUS
+            {{ node.field_fold6button.value }}
           </button>
         </div>
       </div>
@@ -299,24 +298,20 @@
       <div class="row">
         <div class="col-sm-4 bloc1Footer"></div>
         <div class="col-sm-2 bloc2Footer">
-          <p class="title">SUIVEZ NOUS</p>
-          <p class='fb'=><a target="_blank" href="https://www.facebook.com/FutBak-1609084012732972/?skip_nax_wizard=true">Facebook</a></p>
-          <p class='insta'><a target="_blank" href="https://www.instagram.com/_futbak_/">Instagram</a></p>
-          <p class='twt'><a target="_blank" href='https://twitter.com/FutBak'>Twitter</a></p>
+          <p class="title">{{ node.field_footerbloc2title.value }}</p>
+          <p class='fb'=><a target="_blank" href="https://www.facebook.com/FutBak-1609084012732972/?skip_nax_wizard=true">{{ node.field_footerbloc2fb.value }}</a></p>
+          <p class='insta'><a target="_blank" href="https://www.instagram.com/_futbak_/">{{ node.field_footerbloc2inta.value }}</a></p>
+          <p class='twt'><a target="_blank" href='https://twitter.com/FutBak'>{{ node.field_footerbloc2twt.value }}</a></p>
         </div>
         <div class="col-sm-2 bloc3Footer">
-          <p class="title">CONTACT</p>
+          <p class="title">{{ node.field_footerbloc3title.value }}</p>
           <div class="iconPosition"></div>
           <div class="labelPosition">
-            <p>Campus Georges Charpak Provence</p>
-            <p>880 route de Mimet, 13120 Gardanne</p>
-            <p>+33 (0)6 67 81 54 87</p>
-            <p>+33 (0)4 42 61 68 21</p>
-            <p>contact@sportbak.com</p>
+            {{ node.field_footerbloc3text.value|raw}}
           </div>
         </div>
         <div class="col-sm-4 bloc4Footer">
-          <p class="title">RESTEZ INFORMé</p>
+          <p class="title">{{ node.field_footerbloc4title.value }}</p>
           <!-- Begin MailChimp Signup Form -->
           <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
           <style type="text/css">
@@ -325,7 +320,7 @@
           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
           </style>
           <div id="mc_embed_signup">
-          <form action="//sportbak.us14.list-manage.com/subscribe/post?u=d06f129083eff828a4b472733&amp;id=958d70e3da" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <form action="//sportbak.us14.list-manage.com/subscribe/post?u=d06f129083eff828a4b472733&amp;id={{ node.field_mailchimpid.value }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <div id="mc_embed_signup_scroll">
 
           <div class="mc-field-group">            
@@ -336,7 +331,7 @@
           <div class="response" id="mce-success-response" style="display:none"></div>
           </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
           <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d06f129083eff828a4b472733_958d70e3da" tabindex="-1" value=""></div>
-          <div class="clear"><input type="submit" value="Envoyer" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          <div class="clear"><input type="submit" value="{{ node.field_footerbutton.value }}" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
           </div>
           </form>
           </div>

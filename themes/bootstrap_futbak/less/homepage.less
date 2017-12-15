@@ -48,6 +48,7 @@ body.path-frontpage{
 		a.navbar-brand{
 			transition: margin-top 0.8s;
 			-webkit-transition: margin-top 0.8s;
+			color: transparent
 		}
 		ul{
 			transition: margin-top 0.8s, padding-bottom 0.8s;
@@ -64,7 +65,35 @@ body.path-frontpage{
 			}
 		}
 	}
-
+	#block-landingpagemenu {
+		ul{
+			margin-right: 50px
+		}
+	}
+	#block-selecteurdelangue
+	{
+		ul{
+			margin: 0px 30px;
+			margin-top: 27px;
+			position: absolute;
+			right: 0;
+		}
+		li{
+			
+			display: inline-block;
+			a{
+				color :transparent;
+				
+			}
+			&.fr{
+				background: url('../images/fr.png') no-repeat 100% 0%;
+				
+			}
+			&.en{
+				background: url('../images/en.png') no-repeat 100% 0%;
+			}
+		}
+	}
 	div.main-container{
 		overflow-x: hidden;
 		margin-top: -60px;		
@@ -113,6 +142,9 @@ body.path-frontpage{
 				    font-size: 1.1em;
 				    text-shadow: 0px 0px 4px #000;
 				}
+			}
+			&.en{
+				background: url('../images/background_fold1_en.jpg') no-repeat 100% 0%;
 			}
 		}
 		div.fold2{					
@@ -511,8 +543,10 @@ body.path-frontpage{
 			-webkit-background-size: cover;
 			div.blocFold1 p.postSlogan {			
 			    font-weight: bold;
-			}
-		}	
+			}&.en{
+				background: url('../images/background_fold1_1600_en.jpg') no-repeat 100% 0%;
+		}
+		}
     	div.fold2 { 
 	    	div.bloc1Fold2{
 	    		background-position-y : 125px;
@@ -663,7 +697,11 @@ body.path-frontpage{
 			background-size: cover;
 			-moz-background-size: cover;
 			-webkit-background-size: cover;
+			&.en{
+				background: url('../images/background_fold1_1200px_en.jpg') no-repeat 100% 0%;
+			}
 		}
+		
 		div.fold2 {
 		    background-position-x: 100%;			
 			padding-bottom: 400px;
@@ -904,6 +942,13 @@ body.path-frontpage{
 		    	font-size: 2.6em;			    
 			}
 		}
+		div.fold1.en {
+		    background-size: 242%;
+		    background-position-x: 48%;
+		    div.blocFold1 p.slogan {			
+		    	font-size: 2.6em;			    
+			}
+		}
 		div.fold3{
 			div.bloc1Fold3{
 				min-height: 195px;
@@ -934,7 +979,21 @@ body.path-frontpage{
 // En dessous de 480px
 @media (max-width : @screen-phone) { 
 	body.path-frontpage div.main-container {
-		div.fold1 {
+		div.fold1{
+			min-height: 1070px;
+			background-size: cover;
+			-moz-background-size: cover;
+			-webkit-background-size: cover;
+    		background-position-y: -40px;
+			div.blocFold1 {
+		    	margin-top: 230px;	
+		    	p.slogan {
+				    font-size: 1.8em;
+				    line-height: 2em;
+				}
+			}
+		}
+		div.fold1.en{
 			min-height: 1070px;
 			background-size: cover;
 			-moz-background-size: cover;
